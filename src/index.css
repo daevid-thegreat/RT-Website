@@ -1,6 +1,5 @@
 @layer reset, base, tokens, recipes, utilities;
 
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -8,6 +7,30 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
+@font-face {
+  font-family: "ClashDisplay-Variable";
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("./fonts/ClashDisplay-Variable.ttf") format("truetype");
+}
+ @font-face {
+        font-family: "Manrope Variable";
+        font-style: normal;
+        font-weight: 200 400 600 700 800;
+       font-display: swap;
+        src: url('../fonts/Manrope-VariableFont_wght.ttf') format('truetype')
+      }
+/* body {
+  font-family: 'ClashDisplay-Variable';
+} */
+
+/* body {
+  width: 100%;
+  margin: auto;
+  display: block;
+} */
