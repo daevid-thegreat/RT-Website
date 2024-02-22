@@ -3,6 +3,7 @@ import { Routes } from "./baseRoutes";
 import AboutUs from "../pages/AboutUs";
 import Danfo from "../pages/danfo";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <AboutUs />
+        <Footer />
       </>
     ),
   },
@@ -20,6 +22,7 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Danfo />
+        <Footer />
       </>
     ),
   },
@@ -29,6 +32,7 @@ const router = createBrowserRouter([
       <div>
         <Nav />
         Partner with us
+        <Footer />
       </div>
     ),
   },
@@ -38,6 +42,7 @@ const router = createBrowserRouter([
       <div>
         <Nav />
         Donate
+        <Footer />
       </div>
     ),
   },

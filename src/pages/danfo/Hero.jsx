@@ -3,9 +3,9 @@ import { Flex, Image, Text } from "@chakra-ui/react";
 const Hero = () => {
   return (
     <Flex
-      pt={{ base: "89px", md: "106px" }}
-      pb={{ base: "42px", md: "40px" }}
-      px={{ base: "20px", md: "107px" }}
+      pt={{ base: "89px", lg: "106px" }}
+      pb={{ base: "42px", lg: "40px" }}
+      px={{ base: "20px", lg: "107px" }}
       flexDir={"column"}
       w={"100%"}
       overflowX={"hidden"}
