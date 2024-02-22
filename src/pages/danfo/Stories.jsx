@@ -11,7 +11,7 @@ const Stories = () => {
     >
       <Text
         fontFamily={"clash"}
-        fontSize={{ base: "40px", md: "64px" }}
+        fontSize={{ base: "40px", lg: "64px" }}
         color={"black100"}
         fontWeight={700}
       >
@@ -45,7 +45,7 @@ const Stories = () => {
           border={"4px solid #111413"}
           color={"white"}
           fontSize={{ base: "24px", md: "40px" }}
-          fontFamily={"var(--chakra-fonts-clash)"}
+          fontFamily={"clash"}
           fontWeight={600}
           h={{ base: "230px", lg: "293px" }}
           px={{ base: "24px", lg: "56px" }}
