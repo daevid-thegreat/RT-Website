@@ -1,4 +1,8 @@
 @layer reset, base, tokens, recipes, utilities;
+@import url("../public/fonts/visby/style.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
@@ -18,19 +22,376 @@
   font-style: normal;
   src: url("./fonts/ClashDisplay-Variable.ttf") format("truetype");
 }
- @font-face {
-        font-family: "Manrope Variable";
-        font-style: normal;
-        font-weight: 200 400 600 700 800;
-       font-display: swap;
-        src: url('../fonts/Manrope-VariableFont_wght.ttf') format('truetype')
-      }
-/* body {
-  font-family: 'ClashDisplay-Variable';
-} */
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("./fonts/ClashDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("./fonts/ClashDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("./fonts/ClashDisplay-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  font-style: normal;
+  src: url("./fonts/ClashDisplay-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Manrope Variable";
+  font-style: normal;
+  font-weight: 200 400 600 700 800;
+  font-display: swap;
+  src: url("../fonts/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+}
+html,
+body {
+  scroll-behavior: smooth;
+  color: #231f20;
+  font-family: "Manrope Variable", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+.visby-reg {
+  font-family: "Visby Regular";
+}
+.visby-sem {
+  font-family: "Visby Semibold";
+}
+.manD {
+  font-family: "Manrope Variable", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+.manr {
+  font-family: "Visby Semibold";
+}
 
-/* body {
-  width: 100%;
-  margin: auto;
-  display: block;
-} */
+.cD400 {
+  font-family: "ClashDisplay-Regular";
+}
+.cD500 {
+  font-family: "ClashDisplay-Medium";
+}
+.cD600 {
+  font-family: "ClashDisplay-Semibold";
+}
+.cD700 {
+  font-family: "ClashDisplay-Bold";
+}
+
+.sf {
+  font-family: "SF Pro Display";
+}
+
+.headerBG {
+  background-color: #f6b847;
+  background-image: url("images/rough-bg.png");
+}
+
+.offshad {
+  box-shadow: 4px 4px 0 0 #198046;
+}
+
+.offshadblack,
+.offshadblack2 {
+  box-shadow: 4px 4px 0 0 #231f20;
+}
+
+.offshadblack3 {
+  box-shadow: 4px 4px 0 0 #231f20;
+  padding-left: 0 !important;
+}
+
+.offshadctayellow {
+  box-shadow: 4px 4px 0 0 #f6b847;
+}
+.offshadyellow {
+  box-shadow: 8px 8px 0 0 #f6b847;
+}
+.offshadctayellow2 {
+  box-shadow: 4px 4px 0 0 #f6b847;
+}
+
+.bg-grene {
+  background: #47996b;
+}
+
+.h2-01 {
+  color: #231f20;
+  font-size: 36px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.p-01 {
+  font-family: "Visby Semibold";
+}
+.p-01r {
+  font-family: "Visby Regular";
+}
+
+.visbymi {
+  font-family: "Visby Medium Italic";
+}
+
+.bodyCon {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.slotc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px 13px;
+}
+
+.spa {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #231f20;
+  border-bottom: 3px solid #231f20;
+}
+.spa:nth-child(1) {
+  background-image: url("images/p1.png");
+  border-top: 3px solid #231f20;
+}
+.spa:nth-child(2) {
+  background-image: url("images/p2.png");
+}
+.spa:nth-child(3) {
+  background-image: url("images/p3.png");
+}
+.spa:nth-child(4) {
+  background-image: url("images/p4.png");
+}
+.spa:nth-child(5) {
+  background-image: url("images/p5.png");
+}
+.spa:nth-child(6) {
+  background-image: url("images/p6.png");
+}
+
+.cp-cont2 > div,
+.cp-cont > div {
+  height: 117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid #231f20;
+}
+
+.cp-cont2 > div:last-of-type {
+  border-bottom: 4px solid #231f20;
+}
+
+.cp-cont > div > img,
+.cp-cont2 > div > img {
+  height: auto;
+  width: auto;
+}
+
+input::placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input::-webkit-input-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input::-moz-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+input:-ms-input-placeholder {
+  color: #223027;
+  font-family: "Visby Semibold";
+  line-height: 150%;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 767px) {
+  .sp-cont {
+    grid-template-columns: auto auto;
+  }
+  .spa:nth-child(1) {
+    border-top: 3px solid #231f20;
+    border-right: 3px solid #231f20;
+  }
+  .spa:nth-child(2) {
+    border-top: 3px solid #231f20;
+  }
+  .spa:nth-child(3) {
+    border-right: 3px solid #231f20;
+    border-bottom: 3px solid #231f20;
+  }
+  .spa:nth-child(4) {
+    border-bottom: 3px solid #231f20;
+  }
+  .spa:nth-child(5) {
+    border-right: 3px solid #231f20;
+    border-bottom: 3px solid #231f20;
+  }
+  .spa:nth-child(6) {
+    border-bottom: 3px solid #231f20;
+  }
+  .bodyCon {
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  input::placeholder {
+    font-size: 16px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+  input::-moz-placeholder {
+    font-size: 16px;
+  }
+
+  input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+
+  .cp-cont {
+    grid-template-columns: repeat(5, auto);
+  }
+  .cp-cont2 {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .cp-cont2 > div,
+  .cp-cont > div {
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 4px solid #231f20;
+  }
+
+  .cp-cont > div:last-of-type,
+  .cp-cont2 > div:last-of-type {
+    border-right: none !important;
+  }
+
+  .cp-cont > div {
+    border-top: 4px solid #231f20;
+  }
+  .cp-cont2 > div {
+    border-bottom: 4px solid #231f20;
+  }
+
+  .sp-cont {
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  }
+
+  .sp-cont > div:nth-child(1) {
+    grid-column: 1 / 8;
+  }
+  .sp-cont > div:nth-child(2) {
+    grid-column: 8 / 13;
+  }
+  .spa {
+    grid-column: span 3;
+    border: 3px solid #231f20;
+  }
+  .spa:nth-child(1) {
+    border-left: none;
+    border-bottom: none;
+  }
+  .spa:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .spa:nth-child(3) {
+    border-left: none;
+    border-right: none;
+  }
+  .spa:nth-child(5) {
+    border-left: none;
+  }
+  .spa:nth-child(6) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .bodyCon {
+    max-width: 1440px;
+  }
+
+  .slotc {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .manr {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  .h2-01 {
+    color: #231f20;
+    font-size: 88px;
+    font-family: "ClashDisplay-Bold";
+    letter-spacing: -0.88px;
+  }
+
+  .offshad {
+    box-shadow: 16px 16px 0 0 #198046;
+  }
+
+  .offshadblack {
+    box-shadow: 16px 16px 0 0 #231f20;
+  }
+  .offshadblack2 {
+    box-shadow: 8px 8px 0 0 #231f20;
+  }
+
+  .bg-grene {
+    background: #198046;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bodyCon {
+    padding: 0;
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+}

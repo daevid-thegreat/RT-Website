@@ -11,7 +11,7 @@ const Hero = () => {
       overflowX={"hidden"}
     >
       <Image
-        src="/images/danfo.webp"
+        src="/images/rtGroupImg.webp"
         mb={{ base: "", md: "24px" }}
         maxW={"1216px"}
         w={"100%"}
@@ -21,15 +21,7 @@ const Hero = () => {
           base: "1.38px solid #111413",
           md: "5px solid #111413",
         }}
-        pos={"relative"}
-        // _before={{
-        //   position: "absolute",
-        //   bg: "#F6B847",
-        //   top: "123px",
-        //   left: "24px",
-        //   w: "100%",
-        //   h: "100%",
-        // }}
+        className="offshadyellow"
       />
       <Text
         fontFamily={"clash"}
