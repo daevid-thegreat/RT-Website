@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Routes } from "../routes/baseRoutes";
 import { useState } from "react";
 
-const Nav = () => {
+const Nav = ({bg, bgImage}) => {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   return (
@@ -14,10 +14,15 @@ const Nav = () => {
       justifyContent={"center"}
       w={"100%"}
       pos={"fixed"}
-      zIndex={"10"}
-      bg={"white"}
+      zIndex={"100"}
+      bg={bg}
+      bgImage={bgImage}
       maxW={"1440px"}
       margin={"auto"}
+      borderLeft={{
+        base: "",
+        md: "1px solid #111413",
+      }}
     >
       <Flex
         h={"64px"}

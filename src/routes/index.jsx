@@ -1,16 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Routes } from "./baseRoutes";
-import AboutUs from "../pages/AboutUs";
 import Danfo from "../pages/danfo";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import AboutUs from "../pages/aboutUs";
 
 const router = createBrowserRouter([
   {
     path: Routes.index,
     element: (
       <>
-        <Nav />
+        <Nav bg={"#f6b847"} bgImage={'images/rough-bg.png'} />
         <AboutUs />
         <Footer />
       </>
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     path: Routes.danfo,
     element: (
       <>
-        <Nav />
+        <Nav bg={'white'} />
         <Danfo />
         <Footer />
       </>

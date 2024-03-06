@@ -1,5 +1,6 @@
 import Articles from "./Articles";
 import Bus from "./Bus";
+import Footprints from "./Footprints";
 import Hero from "./Hero";
 import Portfolios from "./Portfolios";
 import Roadtrippers from "./Roadtrippers";
@@ -15,6 +16,7 @@ const Danfo = () => {
       <Articles />
       <Bus />
       <Roadtrippers />
+      <Footprints />
     </Flex>
   );
 };
