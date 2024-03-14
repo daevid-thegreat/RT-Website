@@ -4,6 +4,7 @@ import Danfo from "../pages/danfo";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import AboutUs from "../pages/aboutUs";
+import PartnerWithUs from "../pages/pwu";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Nav />
-        Partner with us
+        <PartnerWithUs />
         <Footer />
       </div>
     ),
