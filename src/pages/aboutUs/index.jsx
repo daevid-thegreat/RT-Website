@@ -1,22 +1,28 @@
-import DesignBanner from "./DesignBanner"
-import Hero from "./Hero"
-import Belief from "./Belief"
-import Mission from "./Mission";
-import Gallery from "./Gallery";
-import Companies from "./Companies";
-import Subscribe from "./Subscribe";
+import React from 'react';
+import Hero from './Hero';
+import History from './History';
+import Mission from './Mission';
+import FirstSDG from './FirstSDG';
+import SecondSDG from './SecondSDG';
+import Team from './Team';
+// import Sponsors from './sponsors';
+// import Partners from './partners';
+// import Parspons from './Parspons'
 
 const AboutUs = () => {
   return (
     <>
       <Hero />
-      <DesignBanner />
-      <Belief />
+      <History />
       <Mission />
-      <Gallery />
-      <Companies />
-      <Subscribe />
+      <FirstSDG />
+      <SecondSDG />
+      <Team />
+      {/* <Sponsors />
+      <Partners />
+      <Parspons /> */}
     </>
-  )
-}
-export default AboutUs
+  );
+};
+
+export default AboutUs;
