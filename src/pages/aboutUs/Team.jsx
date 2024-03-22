@@ -250,7 +250,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/ashimit.png"
+            src="/images/ashimit.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -282,7 +282,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Caveman.png"
+            src="/images/Caveman.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -312,7 +312,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Feyi.jpeg"
+            src="/images/Feyi.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -344,7 +344,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Temipexels.png"
+            src="/images/Temipexels.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -374,7 +374,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/KDPICS.jpeg"
+            src="/images/KDPICS.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -404,7 +404,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Temipexels.png"
+            src="/images/Temipexels.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -434,7 +434,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Temipexels.png"
+            src="/images/Temipexels.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -464,7 +464,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Nonye.jpeg"
+            src="/images/Nonye.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -494,7 +494,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Dami.png"
+            src="/images/Dami.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -524,7 +524,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Zainab.jpeg"
+            src="/images/Zainab.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -554,7 +554,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Zainab.jpeg"
+            src="/images/Zainab.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
