@@ -3,6 +3,9 @@ import { Routes } from "./baseRoutes";
 import Danfo from "../pages/danfo";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+// import AboutUs from "../pages/aboutUs";
+import PartnerWithUs from "../pages/pwu";
+import HomeP from "../pages/homeP";
 import AboutUs from "../pages/aboutUs";
 
 const router = createBrowserRouter([
@@ -11,11 +14,23 @@ const router = createBrowserRouter([
     element: (
       <>
         <Nav bg={"#f6b847"} bgImage={'images/rough-bg.png'} />
+        <HomeP />
+        <Footer />
+      </>
+    ),
+  },
+
+  {
+    path: Routes.about,
+    element: (
+      <>
+        <Nav bg={'white'} bgImage={'images/rough-bg.png'} />
         <AboutUs />
         <Footer />
       </>
     ),
   },
+
   {
     path: Routes.danfo,
     element: (
@@ -30,8 +45,8 @@ const router = createBrowserRouter([
     path: Routes.partner,
     element: (
       <div>
-        <Nav />
-        Partner with us
+        <Nav bg={'white'} />
+        <PartnerWithUs />
         <Footer />
       </div>
     ),

@@ -1,52 +1,78 @@
-import { Flex, Image, Link } from "@chakra-ui/react";
+import { Flex, Image, Link, Text, Button, Box} from "@chakra-ui/react";
 
 const Hero = () => {
   return (
     <Flex
-      as={"section"}
       pt={{ base: "89px", lg: "106px" }}
-      className="headerBG flex flex-col justify-center items-center"
+      pb={{ base: "42px", lg: "40px" }}
+      px={{ base: "20px", lg: "107px" }}
+      flexDir={"column"}
+      bgImage={'images/rough-bg.png'}
+      w={"100%"}
+      overflowX={"hidden"}
     >
-      <div className="pb-8 lg:pb-[58px] px-5 lg:px-[64px] xl:px-0">
-        <div className="">
-          <Image
-            src={"images/heros.png"}
-            alt="Hero Section Image"
-            className="border-[1.404px] lg:border-[5px] border-mblack w-full max-w-[1200px] h-auto offshad"
-            quality={100}
-            placeholder="blur"
-            border={{
-              base: "1.38px solid #111413",
-              md: "5px solid #111413",
-            }}
-          />
-        </div>
-        <div className="pt-6 lg:pt-[29px]">
-          <p className="block lg:hidden visbymi text-sm leading-[-0.24px]">
-            ....where strangers become family
-          </p>
-          <h2 className="cD700 h2-01">LET’S JOURNEY TOGETHER </h2>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-1 lg:pt-0">
-          <Link
-            href=""
-            className="bg-grene self-start lg:self-end cD600 font-semibold text-xs lg:text-base leading-[9.993px] py-4 lg:px-8 px-[13px] uppercase lg:cD600 lg:leading-6"
-            color={"white"}
+      <Image
+        src="/images/RTAboutUs.jpeg"
+        mb={{ base: "", md: "24px" }}
+        maxW={"1216px"}
+        w={"100%"}
+        h={{ base: "370px", md: "492px" }}
+        objectFit={"cover"}
+        border={{
+          base: "1.38px solid #111413",
+          md: "5px solid #111413",
+        }}
+        className="offshadyellow "
+      />
+          
+
+    <Flex
+      // pt={{ base: "89px", lg: "106px" }}
+      // pb={{ base: "42px", lg: "40px" }}
+      // pl={{ base: "20px", lg: "50px" }}
+        flexDir={{ base: "column", lg: "row" }}
+      // w={"100%"}
+      overflowX={"hidden"}
+      >
+        <Box>
+          <Text
+            fontFamily={"clash"}
+            fontWeight={700}
+            color={"black100"}
+            fontSize={{ base: "40px", lg: "80px" }}
+            w='100%'
+            mr={{ base: "20px", lg: "150px" }}
+
           >
-            Meet the roadtrippers
-          </Link>
-          <p className="hidden lg:block max-w-[330px] leading-[22px] text-[#111312] manD">
-            Pack your bags, grab a map, and join us on our way to
-            greatness. Collaboration, learning and fun awaits at
-            RoadTrip Community
-          </p>
-          <p className="block lg:hidden tracking-[-0.32px] p-01 pt-7">
-            Join RoadTrip, a community of adventure seekers and tech
-            enthusiasts, and let us embark on unforgettable journeys
-            together
-          </p>
-        </div>
-      </div>
+            ABOUT US
+          </Text>
+          
+          <Button width={250}
+            background={"green"}
+            border={"none"}
+            color={"#ffff"}
+            p={"25px"}
+            fontSize={{base:"md", lg:"lg"}}
+          >
+            MEET THE ROADTRIPPERS
+          </Button>  
+        </Box>
+
+        <Box
+          ml={{ base: "20px", lg: "250px" }}
+          mt={{ base: "20px", lg: "20px" }}
+          w='70%'
+          fontWeight={{base:400, lg:500}}
+          fontSize={{ base: "12px", lg: "20px" }}
+        >
+        <Text>
+          Established in 2021, RoadTrip Community initially started out as a Design Community. This was greatly influenced by the fact that the ancestors of this group came from the Design Track at Zuri Training in April 2021. <br /> <br />
+
+          As the community evolved, we made room for folks with multi-disciplinary interests and skills other than Design itself. 
+        </Text>
+        </Box>
+    </Flex>
+      
     </Flex>
   );
 };

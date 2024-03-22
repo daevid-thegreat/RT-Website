@@ -77,9 +77,21 @@ const Nav = ({bg, bgImage}) => {
             cursor={"pointer"}
             onClick={() => navigate(Routes.index)}
           >
+            Home
+          </Text>
+
+          <Image src={"/images/ellipse.png"} pr={"24px"} />
+
+
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.about)}
+          >
             About Us
           </Text>
           <Image src={"/images/ellipse.png"} pr={"24px"} />
+          
           <Text
             pr={"24px"}
             cursor={"pointer"}
@@ -88,6 +100,7 @@ const Nav = ({bg, bgImage}) => {
             Inside Danfo Bus
           </Text>
           <Image src={"/images/ellipse.png"} pr={"24px"} />
+          
           <Text
             pr={"24px"}
             cursor={"pointer"}
@@ -95,12 +108,15 @@ const Nav = ({bg, bgImage}) => {
           >
             Partner With Us
           </Text>
+          
           <Button
             text={"DONATE"}
             cursor={"pointer"}
             onClick={() => navigate(Routes.donate)}
           />
         </Flex>
+        
+        
         <Flex
           borderLeft={"3px solid"}
           borderColor={"black10"}
@@ -137,6 +153,7 @@ const Nav = ({bg, bgImage}) => {
             fontFamily={"clash"}
             color={"black200"}
           >
+
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -151,9 +168,28 @@ const Nav = ({bg, bgImage}) => {
                   setShowNav(false);
                 }}
               >
+                Home
+              </Text>
+            </Flex>
+
+            <Flex
+              py={"40px"}
+              borderBottom={"3px solid"}
+              borderColor={"black200"}
+              w={"100%"}
+              alignItems={"center"}
+              justifyContent={"center"}
+            >
+              <Text
+                onClick={() => {
+                  navigate(Routes.about);
+                  setShowNav(false);
+                }}
+              >
                 About Us
               </Text>
             </Flex>
+        
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -171,6 +207,7 @@ const Nav = ({bg, bgImage}) => {
                 Inside Danfo Bus
               </Text>
             </Flex>
+        
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -188,8 +225,9 @@ const Nav = ({bg, bgImage}) => {
                 Partner With Us
               </Text>
             </Flex>
+        
           </Flex>
-          <Flex onClick={() => navigate(Routes.danfo)}>
+          <Flex onClick={() => navigate(Routes.danfo)} >
             <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
           </Flex>
         </Flex>

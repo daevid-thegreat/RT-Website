@@ -1,6 +1,7 @@
 export const Routes = {
   index: "/",
- danfo: '/danfo',
- partner: '/partner-with-us',
- donate: '/donate'
+  about: "/about-us",
+  danfo: "/danfo",
+  partner: "/partner-with-us",
+  donate: "/donate",
 };
