@@ -7,7 +7,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p1.png"}
+            src={"/images/p1.png"}
             placeholder="blur"
             alt=""
           />
@@ -23,7 +23,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p2.png"}
+            src={"/images/p2.png"}
             placeholder="blur"
             alt=""
           />
@@ -39,7 +39,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa ">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p3.png"}
+            src={"/images/p3.png"}
             placeholder="blur"
             alt=""
           />
@@ -55,7 +55,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa ">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p4.png"}
+            src={"/images/p4.png"}
             placeholder="blur"
             alt=""
           />
@@ -71,7 +71,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa ">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p5.png"}
+            src={"/images/p5.png"}
             placeholder="blur"
             alt=""
           />
@@ -87,7 +87,7 @@ const Gallery = () => {
         <div className="lg:h-[370px] spa ">
           <Image
             className="invisible lg:hidden w-full h-full"
-            src={"images/p6.png"}
+            src={"/images/p6.png"}
             placeholder="blur"
             alt=""
           />
