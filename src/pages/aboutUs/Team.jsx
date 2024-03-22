@@ -39,7 +39,7 @@ const Team = () => {
           objectFit='cover'
           w={"100%"}
           maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-          src="/public/images/MsVick1.png"
+          src="/images/MsVick1.png"
           alt='MsVick'
           
         />
@@ -95,7 +95,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/MsVick1.png"
+            src="/images/MsVick1.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -126,7 +126,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Caveman.png"
+            src="/images/Caveman.png"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -159,7 +159,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Ukdev.jpeg"
+            src="/images/Ukdev.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -189,7 +189,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Feyi.jpeg"
+            src="/images/Feyi.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
@@ -219,7 +219,7 @@ const Team = () => {
           objectFit='cover'
           // w={500}
             // maxW={{ base: '100%', sm: '200px', lg: '500px'}}
-            src="/public/images/Feyi.jpeg"
+            src="/images/Feyi.jpeg"
             alt='MsVick'
             borderWidth="3px"
             borderStyle="solid"
