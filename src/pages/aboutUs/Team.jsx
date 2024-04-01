@@ -1,8 +1,9 @@
-import { Flex, Text, Card, CardBody, Stack, Image, CardFooter, Heading, Button, Divider, SimpleGrid, Box } from "@chakra-ui/react";
+import { Flex, Text, Card, CardBody, Stack, Image, CardFooter, Heading, Button, Divider, SimpleGrid, Box, ButtonGroup } from "@chakra-ui/react";
 
 const Team = () => {
   return (
-     <Flex
+    <>
+       <Flex
       p={{base:3, lg: 20}}
       //  p={{ base: 3, lg:5 }}
       flexDir="column"
@@ -576,11 +577,695 @@ const Team = () => {
           </Text>
 
         </Box>
-</SimpleGrid>
+      </SimpleGrid>
+
+      </Flex>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Flex
+        bg={"white"}
+        fontFamily={"manrope"}
+        // p={{ base: 3, lg: 20 }}
+        //  p={{ base: 3, lg:5 }}
+        flexDir={{ base: "row", lg: "column" }}
+        
+      >
+        <Box
+          w={"75%"}
+          flex="1">
+          <Text
+            fontSize={25}
+            fontWeight={500}
+          >
+            <span className="font-bold">In-house Masterclass Facilitators & Mentors:</span> <br />
+            Learn from experienced professionals guiding our members toward success.
+          </Text>
+
+          <Text>
+            Lorem ipsum dolor sit amet consectetur. Scelerisque at et mi eros convallis elementum. Fames imperdiet nulla mauris nisl ultricies sed semper tellus. Pharetra cras lacus id lorem habitant nam. Sit convallis id nunc amet faucibus dignissim. Bibendum vulputate a massa viverra aenean adipiscing at vestibulum feugiat. Mattis ut mauris urna nec aliquet purus. Amet ut facilisis at mollis viverra semper ac. Sed tincidunt enim venenatis feugiat. Auctor dictum eget massa mauris lorem sit tincidunt.
+          </Text>
+
+          
+          <ButtonGroup>
+            <Button bg={"black"} color={"white"} size='lg'>All Role</Button>
+            <Button fontWeight={500} colorScheme='black'  size='lg' variant='outline'>Design</Button>
+            <Button colorScheme='black' variant='outline' size='lg'>Illustration</Button>
+            <Button colorScheme='black' variant='outline' size='lg'>Podcast</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Motion</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >UI/UX</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Engineering</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Marketing</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Growth</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Product</Button>
+            <Button colorScheme='black' variant='outline'size='lg' >Copywriting</Button>
+            <Button colorScheme='black' variant='outline' size='lg'>Marketing</Button>
+          </ButtonGroup>
+        </Box>
+
+        <Box flex="1">
+          <SimpleGrid minChildWidth='120px' spacing='40px' mt={10}>
+            
+            {/* FIRST IMAGE */}
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+            
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+            {/* <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
 
 
 
-     </Flex>
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box>
+
+
+
+            <Box w={'100%'}>
+              <Image
+                objectFit='cover'
+                src="/images/Caveman.png"
+                alt='MsVick'
+                borderWidth="3px"
+                borderStyle="solid"
+                borderColor="black"
+              />
+              
+              <Heading
+                fontSize={{ base: 20, lg: 20 }}
+                fontWeight={500}
+                mt={1}
+              >
+                Caveman
+              </Heading>
+              
+              <Text
+                fontSize={{ base: 5, lg: 10 }}
+                fontWeight={500}
+              >
+                Executive Assistant
+              </Text>
+            </Box> */}
+
+
+          </SimpleGrid>
+
+        </Box>
+
+
+
+
+      </Flex>
+
+    </>
+    
   );
 };
 
