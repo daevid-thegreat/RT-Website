@@ -8,6 +8,7 @@ const Hero = () => {
       px={{ base: "20px", lg: "107px" }}
       flexDir={"column"}
       w={"100%"}
+      bgImage={'images/rough-bg.png'}
       overflowX={"hidden"}
     >
       <Image

@@ -24,7 +24,7 @@ const Hero = () => {
         }}
         className="offshadyellow "
       />
-          
+
 
     <Flex
       // pt={{ base: "89px", lg: "106px" }}
@@ -33,6 +33,7 @@ const Hero = () => {
         flexDir={{ base: "column", lg: "row" }}
       // w={"100%"}
       overflowX={"hidden"}
+      justifyContent={{base:'', lg:'space-between'}}
       >
         <Box>
           <Text
@@ -46,7 +47,7 @@ const Hero = () => {
           >
             ABOUT US
           </Text>
-          
+
           <Button width={250}
             background={"green"}
             border={"none"}
@@ -55,24 +56,26 @@ const Hero = () => {
             fontSize={{base:"md", lg:"lg"}}
           >
             MEET THE ROADTRIPPERS
-          </Button>  
+          </Button>
         </Box>
 
         <Box
-          ml={{ base: "20px", lg: "250px" }}
+          ml={{ base: "20px", lg: "0px" }}
           mt={{ base: "20px", lg: "20px" }}
-          w='70%'
+          w='100%'
+          maxW={{base:'', lg:'463px'}}
           fontWeight={{base:400, lg:500}}
-          fontSize={{ base: "12px", lg: "20px" }}
+          fontSize={{ base: "12px", lg: "16px" }}
+          fontFamily={'manrope'}
         >
         <Text>
           Established in 2021, RoadTrip Community initially started out as a Design Community. This was greatly influenced by the fact that the ancestors of this group came from the Design Track at Zuri Training in April 2021. <br /> <br />
 
-          As the community evolved, we made room for folks with multi-disciplinary interests and skills other than Design itself. 
+          As the community evolved, we made room for folks with multi-disciplinary interests and skills other than Design itself.
         </Text>
         </Box>
     </Flex>
-      
+
     </Flex>
   );
 };

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Routes } from "../routes/baseRoutes";
 import { useState } from "react";
 
-const Nav = ({bg, bgImage}) => {
+const Nav = ({bg}) => {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   return (
@@ -16,7 +16,7 @@ const Nav = ({bg, bgImage}) => {
       pos={"fixed"}
       zIndex={"100"}
       bg={bg}
-      bgImage={bgImage}
+      bgImage={'images/rough-bg.png'}
       maxW={"1440px"}
       margin={"auto"}
       borderLeft={{
@@ -91,7 +91,7 @@ const Nav = ({bg, bgImage}) => {
             About Us
           </Text>
           <Image src={"/images/ellipse.png"} pr={"24px"} />
-          
+
           <Text
             pr={"24px"}
             cursor={"pointer"}
@@ -100,7 +100,7 @@ const Nav = ({bg, bgImage}) => {
             Inside Danfo Bus
           </Text>
           <Image src={"/images/ellipse.png"} pr={"24px"} />
-          
+
           <Text
             pr={"24px"}
             cursor={"pointer"}
@@ -108,15 +108,15 @@ const Nav = ({bg, bgImage}) => {
           >
             Partner With Us
           </Text>
-          
+
           <Button
             text={"DONATE"}
             cursor={"pointer"}
             onClick={() => navigate(Routes.donate)}
           />
         </Flex>
-        
-        
+
+
         <Flex
           borderLeft={"3px solid"}
           borderColor={"black10"}
@@ -189,7 +189,7 @@ const Nav = ({bg, bgImage}) => {
                 About Us
               </Text>
             </Flex>
-        
+
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -207,7 +207,7 @@ const Nav = ({bg, bgImage}) => {
                 Inside Danfo Bus
               </Text>
             </Flex>
-        
+
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -225,7 +225,7 @@ const Nav = ({bg, bgImage}) => {
                 Partner With Us
               </Text>
             </Flex>
-        
+
           </Flex>
           <Flex onClick={() => navigate(Routes.danfo)} >
             <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
