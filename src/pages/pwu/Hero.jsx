@@ -8,6 +8,7 @@ const Hero = () => {
       px={{ base: "20px", lg: "107px" }}
       flexDir={"column"}
       w={"100%"}
+      bgImage={"images/rough-bg.png"}
       overflowX={"hidden"}
     >
       <Image
@@ -32,7 +33,8 @@ const Hero = () => {
         SPONSORSHIP & <br />
         PARTNERSHIP
       </Text>
-      <Button width={150}
+      <Button
+        width={150}
         background={"green"}
         border={"none"}
         color={"#ffff"}

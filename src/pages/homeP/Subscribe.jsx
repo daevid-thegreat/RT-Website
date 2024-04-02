@@ -20,7 +20,7 @@ const Subscribe = () => {
             placeholder="Your email address"
           />
           <div className="flex justify-center items-center">
-            <button class="cD600 offshadctayellow leading-6 bg-black px-8 py-4 text-white">
+            <button className="cD600 offshadctayellow leading-6 bg-black px-8 py-4 text-white">
               Subscribe
             </button>
           </div>

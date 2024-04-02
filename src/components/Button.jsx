@@ -8,12 +8,14 @@ const Button = ({
   px,
   py,
   bg,
+  border,
   borderRadius,
   color,
   isDisabled,
   onClick,
   text,
   hover,
+  hoverColor,
   fontSize,
   fontFamily,
   fontWeight,
@@ -28,6 +30,7 @@ const Button = ({
       // minW={minW ?? "1.5rem"}
       maxW={maxW ?? "11.56rem"}
       mb={mb}
+      border={border}
       px={px ?? "64px"}
       py={py ?? "20px"}
       justifyContent={"center"}
@@ -38,7 +41,7 @@ const Button = ({
       onClick={onClick}
       cursor={"pointer"}
       borderRadius={borderRadius ?? '0px'}
-      _hover={{ bg: hover ?? "#242323" }}
+      _hover={{ bg: hover ?? "#242323", color: hoverColor }}
       _disabled={{
         bg: "#DDD",
         color: "#3A3B3D",

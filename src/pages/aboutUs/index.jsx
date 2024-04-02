@@ -5,6 +5,7 @@ import Mission from './Mission';
 import FirstSDG from './FirstSDG';
 import SecondSDG from './SecondSDG';
 import Team from './Team';
+import Mentors from './Mentors';
 // import Sponsors from './sponsors';
 // import Partners from './partners';
 // import Parspons from './Parspons'
@@ -18,6 +19,7 @@ const AboutUs = () => {
       <FirstSDG />
       <SecondSDG />
       <Team />
+      <Mentors />
       {/* <Sponsors />
       <Partners />
       <Parspons /> */}
