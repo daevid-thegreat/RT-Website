@@ -181,23 +181,7 @@ body {
   border-bottom: 3px solid #231f20;
 }
 .spa:nth-child(1) {
-  background-image: url("images/p1.png");
   border-top: 3px solid #231f20;
-}
-.spa:nth-child(2) {
-  background-image: url("images/p2.png");
-}
-.spa:nth-child(3) {
-  background-image: url("images/p3.png");
-}
-.spa:nth-child(4) {
-  background-image: url("images/p4.png");
-}
-.spa:nth-child(5) {
-  background-image: url("images/p5.png");
-}
-.spa:nth-child(6) {
-  background-image: url("images/p6.png");
 }
 
 .cp-cont2 > div,
