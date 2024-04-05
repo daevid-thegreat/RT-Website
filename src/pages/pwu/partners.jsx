@@ -1,16 +1,4 @@
-import {
-  SimpleGrid,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Flex,
-  Divider,
-  Text,
-  Image,
-  Heading,
-  Link,
-} from "@chakra-ui/react";
+import { SimpleGrid, Card, CardHeader, CardBody, CardFooter, Flex, Divider, Text, Image, Heading, Link,} from "@chakra-ui/react";
 import { pwuData } from "./data";
 
 const partners = () => {

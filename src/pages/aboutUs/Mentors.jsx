@@ -17,6 +17,8 @@ import {
 } from "@chakra-ui/react";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 import Button from "../../components/Button";
+import { auMent } from "./Ment";
+
 
 const Mentors = () => {
   const roles = [
@@ -93,6 +95,9 @@ const Mentors = () => {
           })}
         </Flex>
       </Box>
+      
+      
+      
       <SimpleGrid
         minChildWidth="99px"
         // flexWrap={"wrap"}
@@ -104,14 +109,18 @@ const Mentors = () => {
         // w={"100%"}
         gap={{ base: "19px", lg: "12px" }}
         // justifyItems={"center"}
-      >
-        <Box w={"100%"} maxW={"99px"} m={'auto'}>
+      > 
+        {auMent.map((data, index) => {
+          const { image, heading, text, } = data;
+          return (
+
+            <Box w={"100%"} maxW={"99px"} m={'auto'}>
           <Flex
-            bgImage={"images/Dami.png"}
+            bgImage={image}
             bgColor={"#f6f7f7"}
             bgSize={"cover"}
             border={"1px solid black"}
-            h={"102px"}
+            h={"108px"}
             boxShadow={"2px 2px 0 0 #231f20"}
             alignItems={"flex-end"}
             justifyContent={"flex-end"}
@@ -144,184 +153,24 @@ const Mentors = () => {
             </Flex>
           </Flex>
           <Heading
-            fontSize={{ base: "13px", lg: "8px" }}
-            fontWeight={700}
+            fontSize={{ base: "13px", lg: "15px" }}
+            fontWeight={600}
             fontFamily={"clash"}
             pb={"3px"}
           >
-            Alex
+            {heading}
           </Heading>
           <Text
-            fontSize={{ base: "10px", lg: "6px" }}
+            fontSize={{ base: "10px", lg: "10px" }}
             fontWeight={600}
             fontFamily={"clash"}
           >
-            Counselor, Mental Health
+            {text}
           </Text>
         </Box>
-        <Box w={"100%"} maxW={"99px"} m={'auto'}>
-          <Flex
-            bgImage={"images/Dami.png"}
-            bgColor={"#f6f7f7"}
-            bgSize={"cover"}
-            border={"1px solid black"}
-            h={"102px"}
-            boxShadow={"2px 2px 0 0 #231f20"}
-            alignItems={"flex-end"}
-            justifyContent={"flex-end"}
-            mb={"6px"}
-          >
-            <Flex
-              borderTop={"1px solid #111413"}
-              borderLeft={"1px solid #111413"}
-              mb={"2.7px"}
-              mr={"2.7px"}
-              bgColor={"#f6f7f7"}
-            >
-              <Link
-                borderRight={"1px solid #111413"}
-                px={{ base: "8px", lg: "7px" }}
-              >
-                <Icon
-                  as={FaTwitter}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-              <Link px={{ base: "8px", lg: "7px" }}>
-                <Icon
-                  as={FaLinkedin}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-            </Flex>
-          </Flex>
-          <Heading
-            fontSize={{ base: "13px", lg: "8px" }}
-            fontWeight={700}
-            fontFamily={"clash"}
-            pb={"3px"}
-          >
-            Alex
-          </Heading>
-          <Text
-            fontSize={{ base: "10px", lg: "6px" }}
-            fontWeight={600}
-            fontFamily={"clash"}
-          >
-            Counselor, Mental Health
-          </Text>
-        </Box>
-        <Box w={"100%"} maxW={"99px"} m={'auto'}>
-          <Flex
-            bgImage={"images/Dami.png"}
-            bgColor={"#f6f7f7"}
-            bgSize={"cover"}
-            border={"1px solid black"}
-            h={"102px"}
-            boxShadow={"2px 2px 0 0 #231f20"}
-            alignItems={"flex-end"}
-            justifyContent={"flex-end"}
-            mb={"6px"}
-          >
-            <Flex
-              borderTop={"1px solid #111413"}
-              borderLeft={"1px solid #111413"}
-              mb={"2.7px"}
-              mr={"2.7px"}
-              bgColor={"#f6f7f7"}
-            >
-              <Link
-                borderRight={"1px solid #111413"}
-                px={{ base: "8px", lg: "7px" }}
-              >
-                <Icon
-                  as={FaTwitter}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-              <Link px={{ base: "8px", lg: "7px" }}>
-                <Icon
-                  as={FaLinkedin}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-            </Flex>
-          </Flex>
-          <Heading
-            fontSize={{ base: "13px", lg: "8px" }}
-            fontWeight={700}
-            fontFamily={"clash"}
-            pb={"3px"}
-          >
-            Alex
-          </Heading>
-          <Text
-            fontSize={{ base: "10px", lg: "6px" }}
-            fontWeight={600}
-            fontFamily={"clash"}
-          >
-            Counselor, Mental Health
-          </Text>
-        </Box>
-       
-        <Box w={"100%"} maxW={"99px"} m={'auto'}>
-          <Flex
-            bgImage={"images/Dami.png"}
-            bgColor={"#f6f7f7"}
-            bgSize={"cover"}
-            border={"1px solid black"}
-            h={"102px"}
-            boxShadow={"2px 2px 0 0 #231f20"}
-            alignItems={"flex-end"}
-            justifyContent={"flex-end"}
-            mb={"6px"}
-          >
-            <Flex
-              borderTop={"1px solid #111413"}
-              borderLeft={"1px solid #111413"}
-              mb={"2.7px"}
-              mr={"2.7px"}
-              bgColor={"#f6f7f7"}
-            >
-              <Link
-                borderRight={"1px solid #111413"}
-                px={{ base: "8px", lg: "7px" }}
-              >
-                <Icon
-                  as={FaTwitter}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-              <Link px={{ base: "8px", lg: "7px" }}>
-                <Icon
-                  as={FaLinkedin}
-                  w={{ base: "10px", lg: "10px" }}
-                  h={"auto"}
-                />
-              </Link>
-            </Flex>
-          </Flex>
-          <Heading
-            fontSize={{ base: "13px", lg: "8px" }}
-            fontWeight={700}
-            fontFamily={"clash"}
-            pb={"3px"}
-          >
-            Alex
-          </Heading>
-          <Text
-            fontSize={{ base: "10px", lg: "6px" }}
-            fontWeight={600}
-            fontFamily={"clash"}
-          >
-            Counselor, Mental Health
-          </Text>
-        </Box>
+          );
+        })}
+        
 
       </SimpleGrid>
     </Grid>
