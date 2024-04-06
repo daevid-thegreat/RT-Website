@@ -27,7 +27,7 @@ const FirstSDG = () => {
         >
           <Text
             fontFamily={"clash"}
-            fontSize={{ base: "24px", md: "32px" }}
+            fontSize={{ base: "20px", md: "26px", lg: "32px" }}
             fontWeight={700}
             pb={"17px"}
             pt={{ base: "48px", md: "64px" }}
@@ -63,7 +63,7 @@ const FirstSDG = () => {
         >
           <Text
             fontFamily={"clash"}
-            fontSize={{ base: "24px", md: "32px" }}
+            fontSize={{ base: "20px", md: "26px", lg: "32px" }}
             fontWeight={700}
             pb={"17px"}
             pt={{ base: "48px", md: "64px" }}
