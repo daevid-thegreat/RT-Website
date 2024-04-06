@@ -1,4 +1,4 @@
-import { Flex, Text, Card, CardBody, Stack, Image, CardFooter, Heading, Button, Divider, SimpleGrid, Box, ButtonGroup } from "@chakra-ui/react";
+import { Flex, Text, Card, CardBody, Stack, Image, CardFooter, Heading, Button, Divider, SimpleGrid, Box } from "@chakra-ui/react";
 import { auTData } from "./TData";
 
 const Team = () => {
@@ -95,10 +95,10 @@ const Team = () => {
           {auTData.map((data, index) => {
             const { image, heading, text } = data;
             return (
-            
-              <Box w={"100%"}>
+
+              <Box w={"100%"} key={index}>
                 <Image objectFit="cover" src={image} alt="MsVick" borderWidth="3px" borderStyle="solid" borderColor="black" />
-               
+
                 <Heading fontSize={{ base: 20, lg: 18 }} fontWeight={500}>
                   {heading}
                 </Heading>
@@ -109,7 +109,7 @@ const Team = () => {
               </Box>
             );
           })}
-          
+
         </SimpleGrid>
       </Flex>
 
