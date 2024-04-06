@@ -10,7 +10,7 @@ const SecondSDG = () => {
     >
       <Text
         fontFamily="clash"
-        fontSize={{ base: "24px", md: "32px" }}
+        fontSize={{ base: "20px", md: "26px", lg: "32px" }}
         fontWeight={700}
         pb={{ base: "17px", md: "40px" }}
         pt={{ base: "48px", md: "64px" }}
