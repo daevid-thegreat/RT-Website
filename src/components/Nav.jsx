@@ -16,7 +16,7 @@ const Nav = ({bg}) => {
       pos={"fixed"}
       zIndex={"100"}
       bg={bg}
-      bgImage={'images/rough-bg.png'}
+      bgImage={"images/rough-bg.png"}
       maxW={"1440px"}
       margin={"auto"}
       borderLeft={{
@@ -45,7 +45,12 @@ const Nav = ({bg}) => {
           borderColor={"black100"}
           display={{ base: showNav ? "none" : "flex", lg: "flex" }}
         >
-          <Image src="images/rt-logo.png" my={"12.52px"} />
+          <Image
+            src="images/rt-logo.png"
+            my={"12.52px"}
+            onClick={() => navigate(Routes.index)}
+            cursor={'pointer'}
+          />
         </Box>
         <Box
           display={{ base: showNav ? "flex" : "none", lg: "none" }}
@@ -82,7 +87,6 @@ const Nav = ({bg}) => {
 
           <Image src={"/images/ellipse.png"} pr={"24px"} />
 
-
           <Text
             pr={"24px"}
             cursor={"pointer"}
@@ -115,7 +119,6 @@ const Nav = ({bg}) => {
             onClick={() => navigate(Routes.donate)}
           />
         </Flex>
-
 
         <Flex
           borderLeft={"3px solid"}
@@ -153,7 +156,6 @@ const Nav = ({bg}) => {
             fontFamily={"clash"}
             color={"black200"}
           >
-
             <Flex
               py={"40px"}
               borderBottom={"3px solid"}
@@ -225,9 +227,8 @@ const Nav = ({bg}) => {
                 Partner With Us
               </Text>
             </Flex>
-
           </Flex>
-          <Flex onClick={() => navigate(Routes.danfo)} >
+          <Flex onClick={() => navigate(Routes.danfo)}>
             <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
           </Flex>
         </Flex>

@@ -1,5 +1,5 @@
 @layer reset, base, tokens, recipes, utilities;
-@import url("../public/fonts/visby/style.css");
+@import url("/fonts/visby/style.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
