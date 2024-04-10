@@ -112,12 +112,15 @@ const Nav = ({bg}) => {
           >
             Partner With Us
           </Text>
-
-          <Button
-            text={"DONATE"}
-            cursor={"pointer"}
-            onClick={() => navigate(Routes.donate)}
-          />
+          
+          <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank">
+            <Button
+              text={"DONATE"}
+              cursor={"pointer"}
+              // onClick={() => navigate(Routes.donate)}
+            />
+          </a>
+            
         </Flex>
 
         <Flex
@@ -229,7 +232,10 @@ const Nav = ({bg}) => {
             </Flex>
           </Flex>
           <Flex onClick={() => navigate(Routes.danfo)}>
-            <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
+            <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank"
+              style={{ width: "100%", maxWidth: "100rem" }}>
+              <Button text={"DONATE"} w={"100%"} maxW={"100rem"}/>
+            </a>
           </Flex>
         </Flex>
       )}
