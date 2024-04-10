@@ -41,7 +41,7 @@ const Bus = () => {
         gap={1}
       >
         {dBusdata.map((data, index) => {
-          const { image, text, text2, text3, } = data;
+          const { text, text2, text3, bgColor } = data;
         
           return (
             <GridItem
@@ -49,16 +49,17 @@ const Bus = () => {
               flexDir={"column"}
               justifyContent={"flex-end"}
               w={"100%"}
+              bgColor={bgColor}
               // maxW={{ base: "", lg: "558px" }}
               // bg={`rgba(255, 255, 0, 0.10)`}
-              style={{
-                backgroundImage: `url(${image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                // backdropFilter: "brightness(0.1) blur(50px)",
-                boxShadow: "352px 352px #11131286 inset"
+              // style={{
+              //   backgroundImage: `url(${image})`,
+              //   backgroundSize: "cover",
+              //   backgroundPosition: "center",
+              //   // backdropFilter: "brightness(0.1) blur(50px)",
+              //   boxShadow: "352px 352px #11131286 inset"
                 
-              }}
+              // }}
               borderTop={{
                 base: "2px solid #111413",
                 md: "4px solid #111413",

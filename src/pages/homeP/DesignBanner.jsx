@@ -36,22 +36,22 @@ const DesignBanner = () => {
       <div className=" scroll-content">
         <div className="bg-[#231F20] justify-start text-white flex flex-nowrap whitespace-nowrap gap-[10px] py-[10px] lg:py-6 lg:gap-6">
           <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
+            This is a marathon, not a sprint
           </p>
           <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
           <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
+            This is a marathon, not a sprint
           </p>
           <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
           <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
+            This is a marathon, not a sprint
           </p>
           <p className="w-[5px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
 
           <p className="cD600 lg:cD500 lg:text-[40px] leading-[34px] font-semibold lg:font-medium lg:leading-[84px]">
-            Design is intelligence made visible
+            This is a marathon, not a sprint
           </p>
           <p className="w-[5px] lg:mr-6 mr-[10px] h-[5px] lg:w-3 lg:h-3 rounded-full bg-white flex flex-shrink-0 justify-center items-center self-center"></p>
         </div>
