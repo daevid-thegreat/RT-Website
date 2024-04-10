@@ -41,11 +41,11 @@ const Bus = () => {
         gap={1}
       >
         {dBusdata.map((data, index) => {
-          const { image, heading, text } = data;
+          const { image, text, text2, text3, } = data;
         
           return (
             <GridItem
-              key={index} // Make sure to add a unique key prop
+              key={index}
               flexDir={"column"}
               justifyContent={"flex-end"}
               w={"100%"}
@@ -78,15 +78,48 @@ const Bus = () => {
               display={"flex"}
               fontWeight={600}
             >
-              <Text
-                lineHeight={{ base: "39.36px", md: "49.2px" }}
-                pb={"8px"}
-                fontSize={{ base: "32px", md: "40px" }}
-                fontFamily={"clash"}
-                color={"white"}
-              >
-                {text}
-              </Text>
+              
+              <Flex>
+                <Flex
+                  mb={"2.7px"}
+                  mr={"2.7px"}
+                >
+                  <Text
+                    lineHeight={{ base: "39.36px", md: "49.2px" }}
+                    pb={"8px"}
+                    fontSize={{ base: "25px", md: "23px", lg:"32px" }}
+                    fontFamily={"clash"}
+                    color={"white"}
+                    
+                  >
+                    
+                    {text}
+
+                  </Text>
+
+                  <Text
+                    lineHeight={{ base: "39.36px", md: "49.2px" }}
+                    pl={3}
+                    pr={3}
+                    ml={"12px"}
+                    fontSize={"12px"}
+                    fontFamily={"clash"}
+                    color={"white"}
+                    fontWeight={500}
+                    border={"1px solid #ffff"}
+                    borderRadius={"100px"}
+                    bgColor={"red"}
+                    display={{ base: "none", md: "flex" }}
+                    borderStyle={"double"}
+                  >
+                    
+                    {text3}
+
+                  </Text>
+            </Flex>
+          </Flex>
+
+
               <Text
                 lineHeight={"21.86px"}
                 pb={"8px"}
@@ -94,8 +127,7 @@ const Bus = () => {
                 fontFamily={"manrope"}
                 color={"white"}
               >
-                No filter, no holding back, ask your fellow roadtrippers
-                burning questions
+                {text2}
               </Text>
             </GridItem>
           );
