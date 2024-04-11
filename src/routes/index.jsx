@@ -1,4 +1,5 @@
 import {
+  Link,
   ScrollRestoration,
   createBrowserRouter,
 } from "react-router-dom";
@@ -62,16 +63,16 @@ const router = createBrowserRouter([
       </div>
     ),
   },
-  {
-    path: Routes.donate,
-    element: (
-      <div>
-        <Nav />
-        Donate
-        <Footer />
-      </div>
-    ),
-  },
+  // {
+  //   path: Routes.donate,
+  //   element: (
+  //     <div>
+  //       <Nav />
+  //       <a href="https://flutterwave.com/donate/4l0tmtvm76fk"/>
+  //       <Footer />
+  //     </div>
+  //   ),
+  // },
 ]);
 export default router;
 
