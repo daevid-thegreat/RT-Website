@@ -11,19 +11,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Flex
-        maxW={"1440px"}
-        margin={"auto"}
-        flexDir={"column"}
-        w={"100%"}
-      >
+      <Flex maxW={"1440px"} margin={"auto"} flexDir={"column"} w={"100%"}>
         <RouterProvider router={router} />
         {/* <ScrollRestoration/> */}
       </Flex>
     </ChakraProvider>
   </React.StrictMode>
 );
-
 
 // import React from "react";
 // import ReactDOM from "react-dom/client";

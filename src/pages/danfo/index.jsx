@@ -1,3 +1,6 @@
+import HeaderSEO from "../../components/Header";
+import { content } from "../../content";
+import { Routes } from "../../routes/baseRoutes";
 import Articles from "./Articles";
 import Bus from "./Bus";
 import Footprints from "./Footprints";
@@ -9,15 +12,24 @@ import { Flex } from "@chakra-ui/react";
 
 const Danfo = () => {
   return (
-    <Flex bg={"white"} flexDir={"column"}>
-      <Hero />
-      <Stories />
-      <Portfolios />
-      <Articles />
-      <Bus />
-      <Roadtrippers />
-      <Footprints />
-    </Flex>
+    <>
+      <HeaderSEO
+        title={content.title_inside}
+        url={content.canonical_url_inside}
+        description={content.description_inside}
+        image={content.OG_Image_inside}
+      />
+
+      <Flex bg={"white"} flexDir={"column"}>
+        <Hero />
+        <Stories />
+        <Portfolios />
+        <Articles />
+        <Bus />
+        <Roadtrippers />
+        <Footprints />
+      </Flex>
+    </>
   );
 };
 export default Danfo;
