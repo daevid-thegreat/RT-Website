@@ -8,6 +8,7 @@ import Team from "./Team";
 import Mentors from "./Mentors";
 import HeaderSEO from "../../components/Header";
 import { content } from "../../content";
+import Volunteers from "./Volunteers";
 // import Sponsors from './sponsors';
 // import Partners from './partners';
 // import Parspons from './Parspons'
@@ -29,9 +30,7 @@ const AboutUs = () => {
       <SecondSDG />
       <Team />
       <Mentors />
-      {/* <Sponsors />
-      <Partners />
-      <Parspons /> */}
+      <Volunteers />
     </>
   );
 };
