@@ -71,29 +71,29 @@ const Mentors = () => {
         gap={{ base: "14px", lg: "12px" }}
       >
         {auMent.map((data, index) => {
-          const { heading, image } = data;
+          const { heading, image, color } = data;
           return (
             <Box
               w={"100%"}
-              maxW={"106px"}
+              maxW={"104px"}
               mx={"auto"}
               key={index}
-              h={"135px"}
+              h={{lg:"118px"}}
             >
               <Flex
                 border={"1px solid black"}
-                bgColor={"#f6f7f7"}
-                h={"106px"}
+                bgColor={color}
+                h={"104px"}
                 cursor={"pointer"}
                 boxShadow={"2px 2px 0 0 #231f20"}
-                alignItems={"flex-end"}
-                justifyContent={"flex-end"}
+                alignItems={"center"}
+                justifyContent={"center"}
                 mb={"6px"}
                 pos={"relative"}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <Image src={image} w={"100%"} h={"100%"} />
+                <Image src={image} w={"64px"} h={"64px"} />
                 <Flex
                   borderTop={"1px solid #111413"}
                   borderLeft={"1px solid #111413"}
@@ -108,7 +108,7 @@ const Mentors = () => {
                 >
                   <Link
                     borderRight={"1px solid #111413"}
-                    px={{ base: "8px", lg: "7px" }}
+                    px={{ base: "8px", lg: "5px" }}
                   >
                     <Icon as={FaTwitter} fontSize={"10px"} />
                   </Link>
@@ -118,10 +118,11 @@ const Mentors = () => {
                 </Flex>
               </Flex>
               <Heading
-                fontSize={{ base: "13px", lg: "15px" }}
+                fontSize={"12px"}
                 fontWeight={600}
                 fontFamily={"clash"}
-                pb={"3px"}
+                textTransform={"capitalize"}
+                // pb={"3px"}
                 display={{
                   base: "block",
                   lg: hoveredIndex === index ? "block" : "none",
