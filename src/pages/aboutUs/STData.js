@@ -55,7 +55,7 @@ export const firstauTData = [
   },
 
   {
-    image: "/images/Pelimi1.jpeg",
+    image: "/images/PelumiBam.jpeg",
     heading: "Pelumibot",
     text: "Lead, Open Source",
     text2:
