@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 
 const History = () => {
   return (
@@ -52,14 +52,21 @@ const History = () => {
           >
             Founded on April 12, 2021, RoadTrip Community has a rich history rooted in the design track at Zuri Training. Initially a design-focused community, it has transformed into a home for creatives with diverse skills and interests, expanding its reach to encompass members from Nigeria, the UK, Canada and the US. On this road trip, the journey has been one of evolution, adaptability, and a commitment to empowering its members.
           </Text>
-          <Flex
-            bg={"#E1E6E3"}
+          
+          <Image
+            src="/images/History.png"
+            alt="Green double couch with wooden legs"
+            borderWidth="3px"
+            borderStyle="solid"
+            borderColor="black"
+            objectFit="cover"
             maxW={"508px"}
             w={"100%"}
-            h={{ base: "373px", md: "522px" }}
-            border={"2px solid #000"}
+            h={{ base: "360px", md: "480px" }}
             m={"auto"}
-          ></Flex>
+            mt={1}
+          />
+
         </Flex>
         <Flex
           bg={"#FAD5CE"}
@@ -90,15 +97,19 @@ const History = () => {
           >
             Our vision is to cultivate a thriving community where at least 50% of our members earn $10,000 monthly. This vision is more than a financial goal; it encompasses providing members with the necessary tools and support to maximize job opportunities, financial literacy, negotiation skills, and overall earnings. RoadTrip aspires to be a driving force in creating success stories for its members.
           </Text>
-          <Flex
-            bg={"#E1E6E3"}
+           <Image
+            src="/images/Vision.png"
+            alt="Green double couch with wooden legs"
+            borderWidth="3px"
+            borderStyle="solid"
+            borderColor="black"
+            objectFit="cover"
             maxW={"508px"}
             w={"100%"}
-            h={{ base: "373px", md: "522px" }}
-            border={"2px solid #000"}
-            // alignItems={"center"}
+            h={{ base: "360px", md: "480px" }}
             m={"auto"}
-          ></Flex>
+            mt={1}
+          />
         </Flex>
       </Flex>
     </Flex>
