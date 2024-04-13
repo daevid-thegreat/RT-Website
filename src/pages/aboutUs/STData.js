@@ -37,7 +37,7 @@ export const firstauTData = [
     heading: "Zainab",
     text: "Secretary/ Welfare Assistant",
     text2:
-      "Zainab provides administrative support, manages community records, and coordinates events, ensuring members receive the assistance they need for a positive experience within the RoadTrip Community.",
+      "Zainab provides administrative support, manages community records, and coordinates events, ensuring members receive the assistance they need for a positive experience within the RoadTrip Community. ",
 
     Xlink: "http://www.twitter.com/zayne_ovaa_",
     Llink: "https://www.linkedin.com/in/zainab-balogun",

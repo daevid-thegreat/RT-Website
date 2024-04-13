@@ -61,10 +61,7 @@ const SecondSDG = () => {
             m={"auto"}
             mt={1}
           />
-
-      </Flex>
-
-      
+      </Flex>    
     </Flex>
   );
 };
