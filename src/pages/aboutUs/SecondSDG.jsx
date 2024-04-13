@@ -20,7 +20,6 @@ const SecondSDG = () => {
             pt={{ base: "48px", md: "20px" }}
             pl={{ base: "none", md: "20px" }}
           >
-
             Our Commitment - SDG 8
           </Text>
 
@@ -29,7 +28,7 @@ const SecondSDG = () => {
             fontSize={{ base: "12px", md: "16px", lg: "20px" }}
             fontWeight={300}
             pb={"17px"}
-            // pt={{ base: "48px", md: "64px" }}
+            pl={"20px"}
             color={"red"}
           >
             DECENT WORK AND ECONOMIC GROWTH
@@ -59,14 +58,10 @@ const SecondSDG = () => {
             objectFit="cover"
             maxW={"908px"}
             w={"100%"}
-            // h={{ base: "360px", md: "480px" }}
             m={"auto"}
             mt={1}
           />
-
-      </Flex>
-
-      
+      </Flex>    
     </Flex>
   );
 };
