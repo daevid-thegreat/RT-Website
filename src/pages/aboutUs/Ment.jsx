@@ -1,112 +1,129 @@
-import { femaleMemoji, maleMemoji } from "./memojis";
+import { face} from "./memojis";
 
-function getFemaleMemoji() {
-  return femaleMemoji[
-    Math.floor(Math.random() * femaleMemoji.length)
+function getEmoji() {
+  return face[
+    Math.floor(Math.random() * face.length)
   ];
-}
-function getMaleMemoji() {
-  return maleMemoji[Math.floor(Math.random() * maleMemoji.length)];
 }
 
 export const auMent = [
   {
-    image: getMaleMemoji(),
-    heading: "Caveman",
+    image: getEmoji(),
+    heading: "obamaolu",
+    color: "#4FD98A",
   },
 
   {
-    image: getMaleMemoji(),
-    heading: "Alex",
+    image: getEmoji(),
+    heading: "vectorChi",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "IBK",
+    image: getEmoji(),
+    heading: "dejavu",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "MsVick",
+    image: getEmoji(),
+    heading: "zainab",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "UkDev",
+    image: getEmoji(),
+    heading: "tobiloba",
+    color: "#4FD98A",
   },
   {
-    image: getMaleMemoji(),
-    heading: "Caveman",
-  },
-
-  {
-    image: getMaleMemoji(),
-    heading: "Alex",
+    image: getEmoji(),
+    heading: "maryBlessing",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "IBK",
+    image: getEmoji(),
+    heading: "oyinkansola",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "MsVick",
+    image: getEmoji(),
+    heading: "ayomidotun",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "UkDev",
+    image: getEmoji(),
+    heading: "bisola",
+    color: "#7F7FFA",
+  },
+
+  {
+    image: getEmoji(),
+    heading: "kingDavid",
+    color: "#4FD98A",
   },
 ];
 export const auVol = [
   {
-    image: getMaleMemoji(),
-    heading: "Caveman",
+    image: getEmoji(),
+    heading: "abiodun",
+    color: "#4FD98A",
   },
 
   {
-    image: getMaleMemoji(),
-    heading: "Alex",
+    image: getEmoji(),
+    heading: "figolly",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "IBK",
+    image: getEmoji(),
+    heading: "Jejefolorunsho",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "MsVick",
+    image: getEmoji(),
+    heading: "victoria",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "UkDev",
+    image: getEmoji(),
+    heading: "Monsieurpaulo",
+    color: "#4FD98A",
   },
   {
-    image: getMaleMemoji(),
-    heading: "Caveman",
-  },
-
-  {
-    image: getMaleMemoji(),
-    heading: "Alex",
+    image: getEmoji(),
+    heading: "derek",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "IBK",
+    image: getEmoji(),
+    heading: "cat",
+    color: "#7F7FFA",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "MsVick",
+    image: getEmoji(),
+    heading: "howard",
+    color: "#4FD98A",
   },
 
   {
-    image: getFemaleMemoji(),
-    heading: "UkDev",
+    image: getEmoji(),
+    heading: "elozino",
+    color: "#7F7FFA",
+  },
+
+  {
+    image: getEmoji(),
+    heading: "kingAde",
+    color: "#4FD98A",
   },
 ];
 export const roles = [
