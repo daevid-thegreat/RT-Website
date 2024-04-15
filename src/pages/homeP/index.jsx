@@ -5,6 +5,7 @@ import Mission from "./Mission";
 import Gallery from "./Gallery";
 import Companies from "./Companies";
 import Subscribe from "./Subscribe";
+import Can from "./Can";
 import { HeadProvider, Title, Link, Meta } from "react-head";
 import { content } from "../../content";
 import HeaderSEO from "../../components/Header";
@@ -24,8 +25,9 @@ const HomeP = () => {
       <DesignBanner />
       <Belief />
       <Mission />
-      <Gallery />
       <Companies />
+      <Can />
+      <Gallery />
       <Subscribe />
     </>
   );

@@ -198,7 +198,8 @@ body {
 }
 
 .cp-cont > div > img,
-.cp-cont2 > div > img {
+.cp-cont2 > div > img,
+.cp-cont3 > div > img {
   height: auto;
   width: auto;
 }
