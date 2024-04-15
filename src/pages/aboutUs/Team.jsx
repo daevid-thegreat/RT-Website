@@ -133,7 +133,7 @@ const Team = () => {
                     mb={"2.7px"}
                     mr={"2.7px"}
                     bgColor={"#f6f7f7"}
-                    display={{base:"flex", lg:"none"}}
+                    display={{base:"none", lg:"none"}}
                   >
                     <Link borderRight={"1px solid #111413"} px={{ base: "8px", lg: "7px" }} href={Llink} isExternal>
                       <Icon as={FaLinkedin} w={{ base: "10px", lg: "10px" }} h={"auto"} />
