@@ -143,17 +143,6 @@ export const firstauTData = [
   },
 
   {
-    image: "/images/WeirdDesigner.png",
-    heading: "WeirdDesigner",
-    text: "Counselor, Freelancers",
-    text2:
-      "WeirdDesigner supports freelancers within the community, offering guidance, skills development, and connections to resources for their professional growth.",
-
-    Xlink: "https://twitter.com/iam__exousia",
-    Llink: "https://www.linkedin.com/in/lawalolanrewaju",
-  },
-
-  {
     image: "/images/Temipixels.jpg",
     heading: "Temipixel",
     text: "Counselor/ Brand Lead",
@@ -162,5 +151,16 @@ export const firstauTData = [
 
     Xlink: "https://twitter.com/temipixel",
     Llink: "https://www.linkedin.com/in/temitopeoduntan/",
+  },
+
+  {
+    image: "/images/WeirdDesigner.png",
+    heading: "WeirdDesigner",
+    text: "Counselor, Freelancers",
+    text2:
+      "WeirdDesigner supports freelancers within the community, offering guidance, skills development, and connections to resources for their professional growth.",
+
+    Xlink: "https://twitter.com/iam__exousia",
+    Llink: "https://www.linkedin.com/in/lawalolanrewaju",
   },
 ];
