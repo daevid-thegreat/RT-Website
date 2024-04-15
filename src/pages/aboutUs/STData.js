@@ -154,7 +154,7 @@ export const firstauTData = [
   },
 
   {
-    image: "/images/Temipiexels2.png",
+    image: "/images/Temipixels.jpg",
     heading: "Temipixel",
     text: "Counselor/ Brand Lead",
     text2:
