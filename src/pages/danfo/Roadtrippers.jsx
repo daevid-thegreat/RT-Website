@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 
 const Roadtrippers = () => {
   return (
@@ -63,9 +63,19 @@ const Roadtrippers = () => {
             maxW={"508px"}
             w={"100%"}
             h={{ base: "373px", md: "522px" }}
-            border={"2px solid #000"}
+            borderTop={"3px solid #000"}
+            borderBottom={"3px solid #000"}
             m={"auto"}
-          ></Flex>
+            overflow={"hidden"}
+          >
+            <Image
+              src={"images/value.webp"}
+              alt={"roadtrippers"}
+              w={"100%"}
+              h={"100%"}
+              objectFit={"cover"}
+            />
+          </Flex>
         </Flex>
         <Flex
           bg={"blue300"}
@@ -108,10 +118,20 @@ const Roadtrippers = () => {
             maxW={"508px"}
             w={"100%"}
             h={{ base: "373px", md: "522px" }}
-            border={"2px solid #000"}
+            borderTop={"3px solid #000"}
+            borderBottom={"3px solid #000"}
             // alignItems={"center"}
             m={"auto"}
-          ></Flex>
+            overflow={"hidden"}
+          >
+            <Image
+              src={"images/support.webp"}
+              alt={"roadtrippers"}
+              h={"100%"}
+              w={"100%"}
+              objectFit={"cover"}
+            />
+          </Flex>
         </Flex>
       </Flex>
     </Flex>

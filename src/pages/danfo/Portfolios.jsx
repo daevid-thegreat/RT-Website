@@ -1,9 +1,9 @@
-import { Flex, Text, Image, useMediaQuery } from "@chakra-ui/react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
 
 const Portfolios = () => {
   const scrollingBoxRef = useRef(null);
-  const [isLargerThan768] = useMediaQuery("(min-width:768px)");
+  // const [isLargerThan768] = useMediaQuery("(min-width:768px)");
   useEffect(() => {
     const container = document.querySelector(".scroll-container2");
     const content = document.querySelector(".scroll-content2");
@@ -36,7 +36,7 @@ const Portfolios = () => {
     const content = document.querySelector(".scroll-content");
 
     // Set the scroll amount and interval time
-    const scrollAmount = 2; // Adjust this value to control the scroll speed
+    const scrollAmount = 1; // Adjust this value to control the scroll speed
 
     // Clone the content and append it to the container
     container.appendChild(content.cloneNode(true));
@@ -172,100 +172,100 @@ const Portfolios = () => {
           className={"scroll-content2"}
         >
           <Flex
-            borderRight={{ base: "", md: "3px solid #111413" }}
+            // borderRight={{ base: "", md: "3px solid #111413" }}
             // borderLeft={{ base: "", md: "3px solid #111413" }}
             w={{ base: "100%", md: "707px" }}
             // maxW={"707px"}
-            borderBottom={{ base: "3px solid #111413", md: "" }}
+            // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
           >
-            <Image src={"images/danfo.webp"} />
+            <Image src={"images/portfolio/pf1.webp"} />
           </Flex>
           <Flex
-            borderRight={{ base: "", md: "3px solid #111413" }}
+            // borderRight={{ base: "", md: "3px solid #111413" }}
             w={{ base: "100%", md: "707px" }}
             maxW={"707px"}
-            borderBottom={{ base: "3px solid #111413", md: "" }}
+            // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
           >
-            b
+            <Image src={"images/portfolio/pf2.webp"} />
           </Flex>
           <Flex
-            borderRight={{ base: "", md: "3px solid #111413" }}
+            // borderRight={{ base: "", md: "3px solid #111413" }}
             w={{ base: "100%", md: "707px" }}
             maxW={"707px"}
-            borderBottom={{ base: "3px solid #111413", md: "" }}
+            // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
           >
-            c
+            <Image src={"images/portfolio/pf3.webp"} />
           </Flex>
           <Flex
-            borderRight={{ base: "", md: "3px solid #111413" }}
+            // borderRight={{ base: "", md: "3px solid #111413" }}
             w={{ base: "100%", md: "707px" }}
             maxW={"707px"}
-            borderBottom={{ base: "3px solid #111413", md: "" }}
+            // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
           >
-            d
+            <Image src={"images/portfolio/pf1.webp"} />
           </Flex>
           <Flex
-            borderRight={{ base: "", md: "3px solid #111413" }}
+            // borderRight={{ base: "", md: "3px solid #111413" }}
             w={{ base: "100%", md: "707px" }}
             maxW={"707px"}
-            borderBottom={{ base: "3px solid #111413", md: "" }}
+            // borderBottom={{ base: "3px solid #111413", md: "" }}
             h={{ base: "466px", md: "373px" }}
           >
-            e
+            <Image src={"images/portfolio/pf2.webp"} />
           </Flex>
         </Flex>
       </Flex>
+      <Flex
+        flexDir={"column"}
+        alignItems={"center"}
+        display={{ base: "flex", md: "none" }}
+      >
         <Flex
-          flexDir={"column"}
-          alignItems={"center"}
-          display={{ base: "flex", md: "none" }}
+          w={"100%"}
+          maxW={"707px"}
+          borderBottom={"3px solid #111413"}
+          h={"466px"}
         >
-          <Flex
-            w={"100%"}
-            maxW={"707px"}
-            borderBottom={"3px solid #111413"}
-            h={"466px"}
-          >
-            <Image src={"images/danfo.webp"} objectFit={'cover'}/>
-          </Flex>
-          <Flex
-            w={"100%"}
-            maxW={"707px"}
-            borderBottom={"3px solid #111413"}
-            h={"466px"}
-          >
-            b
-          </Flex>
-          <Flex
-            w={"100%"}
-            maxW={"707px"}
-            borderBottom={"3px solid #111413"}
-            h={"466px"}
-          >
-            c
-          </Flex>
-          <Flex
-            w={"100%"}
-            maxW={"707px"}
-            borderBottom={"3px solid #111413"}
-            h={"466px"}
-          >
-            d
-          </Flex>
-          <Flex
-            w={"100%"}
-            maxW={"707px"}
-            borderBottom={"3px solid #111413"}
-            h={"466px"}
-          >
-            e
-          </Flex>
+          <Image src={"images/danfo.webp"} objectFit={"cover"} />
+        </Flex>
+        <Flex
+          w={"100%"}
+          maxW={"707px"}
+          borderBottom={"3px solid #111413"}
+          h={"466px"}
+        >
+          b
+        </Flex>
+        <Flex
+          w={"100%"}
+          maxW={"707px"}
+          borderBottom={"3px solid #111413"}
+          h={"466px"}
+        >
+          c
+        </Flex>
+        <Flex
+          w={"100%"}
+          maxW={"707px"}
+          borderBottom={"3px solid #111413"}
+          h={"466px"}
+        >
+          d
+        </Flex>
+        <Flex
+          w={"100%"}
+          maxW={"707px"}
+          borderBottom={"3px solid #111413"}
+          h={"466px"}
+        >
+          e
         </Flex>
       </Flex>
+    </Flex>
   );
 };
 export default Portfolios;
