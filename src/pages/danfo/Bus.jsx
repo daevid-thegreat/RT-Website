@@ -33,7 +33,7 @@ const Bus = () => {
         showcasing their diverse skills and creativity. Get ready to
         be inspired!
       </Text>
-      
+
       <Grid
         templateColumns={"1fr 1fr"}
         display={{ base: "flex", md: "grid" }}
@@ -42,7 +42,7 @@ const Bus = () => {
       >
         {dBusdata.map((data, index) => {
           const { text, text2, text3, bgColor } = data;
-        
+
           return (
             <GridItem
               key={index}
@@ -58,7 +58,7 @@ const Bus = () => {
               //   backgroundPosition: "center",
               //   // backdropFilter: "brightness(0.1) blur(50px)",
               //   boxShadow: "352px 352px #11131286 inset"
-                
+
               // }}
               borderTop={{
                 base: "2px solid #111413",
@@ -79,7 +79,7 @@ const Bus = () => {
               display={"flex"}
               fontWeight={600}
             >
-              
+
               <Flex>
                 <Flex
                   mb={"2.7px"}
@@ -91,9 +91,9 @@ const Bus = () => {
                     fontSize={{ base: "25px", md: "23px", lg:"32px" }}
                     fontFamily={"clash"}
                     color={"white"}
-                    
+
                   >
-                    
+
                     {text}
 
                   </Text>
@@ -111,9 +111,11 @@ const Bus = () => {
                     borderRadius={"100px"}
                     bgColor={"red"}
                     display={{ base: "none", md: "flex" }}
+                    alignItems={'center'}
                     borderStyle={"double"}
+                    h={'35px'}
                   >
-                    
+
                     {text3}
 
                   </Text>

@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, Text } from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Link, Text } from "@chakra-ui/react";
 
 const Stories = () => {
   return (
@@ -48,19 +48,26 @@ const Stories = () => {
           fontFamily={"clash"}
           fontWeight={600}
           h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "56px" }}
+          px={{ base: "24px", lg: "50px" }}
           pb={{ base: "32px", lg: "56px" }}
           alignItems={"flex-end"}
           display={"flex"}
         >
-          <Text
-            maxW={{ base: "", lg: "352px" }}
-            w={"100%"}
-            lineHeight={{ base: "19.2px", md: "44px" }}
+          <Link
+            href="https://open.substack.com/pub/roadtripcommunity/p/what-is-it-like-in-roadtrip-community?r=22y5cz&utm_campaign=post&utm_medium=web"
+            target="blank"
           >
-            Life of a techie in the trenches
-          </Text>
+            <Text
+              maxW={{ base: "", lg: "427px" }}
+              w={"100%"}
+              lineHeight={{ base: "19.2px", md: "44px" }}
+              cursor={{ base: "", md: "pointer" }}
+            >
+              What is it like in RoadTrip Community
+            </Text>
+          </Link>
         </GridItem>
+
         <GridItem
           w={"100%"}
           // maxW={{ base: "", lg: "558px" }}
@@ -69,21 +76,27 @@ const Stories = () => {
           border={"4px solid #111413"}
           color={"black100"}
           h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "56px" }}
+          px={{ base: "24px", lg: "50px" }}
           pb={{ base: "32px", lg: "56px" }}
           alignItems={"flex-end"}
           display={"flex"}
         >
-          <Text
-            maxW={{ base: "", lg: "386px" }}
-            w={"100%"}
-            fontSize={{ base: "24px", md: "40px" }}
-            fontFamily={"clash"}
-            fontWeight={600}
-            lineHeight={{ base: "19.2px", md: "44px" }}
+          <Link
+            href="https://open.substack.com/pub/roadtripcommunity/p/dreams-and-memories?r=22y5cz&utm_campaign=post&utm_medium=web"
+            target="blank"
           >
-            What it is like blooming late in tech
-          </Text>
+            <Text
+              maxW={{ base: "", lg: "386px" }}
+              w={"100%"}
+              fontSize={{ base: "24px", md: "40px" }}
+              fontFamily={"clash"}
+              fontWeight={600}
+              lineHeight={{ base: "19.2px", md: "44px" }}
+              cursor={{ base: "", md: "pointer" }}
+            >
+              Dreams and memories
+            </Text>
+          </Link>
         </GridItem>
         <GridItem
           w={"100%"}
@@ -96,18 +109,24 @@ const Stories = () => {
           fontFamily={"clash"}
           fontWeight={600}
           h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "56px" }}
+          px={{ base: "24px", lg: "50px" }}
           pb={{ base: "32px", lg: "56px" }}
           alignItems={"flex-end"}
           display={"flex"}
         >
-          <Text
-            maxW={{ base: "", lg: "552px" }}
-            w={"100%"}
-            lineHeight={{ base: "19.2px", md: "44px" }}
+          <Link
+            href="https://open.substack.com/pub/roadtripcommunity/p/dealing-with-imposter-syndrome-from?r=22y5cz&utm_campaign=post&utm_medium=web"
+            target="blank"
           >
-            What you didn’t know about RoadTrip Community
-          </Text>
+            <Text
+              maxW={{ base: "", lg: "694px" }}
+              w={"100%"}
+              lineHeight={{ base: "19.2px", md: "44px" }}
+              cursor={{ base: "", md: "pointer" }}
+            >
+              Dealing with Imposter Syndrome: From an Actual Imposter
+            </Text>
+          </Link>
         </GridItem>
         <GridItem
           w={"100%"}
@@ -120,18 +139,24 @@ const Stories = () => {
           fontFamily={"clash"}
           fontWeight={600}
           h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "56px" }}
+          px={{ base: "24px", lg: "50px" }}
           pb={{ base: "32px", lg: "56px" }}
           alignItems={"flex-end"}
           display={"flex"}
         >
-          <Text
-            maxW={{ base: "", lg: "352px" }}
-            w={"100%"}
-            lineHeight={{ base: "19.2px", md: "44px" }}
+          <Link
+            href="https://open.substack.com/pub/roadtripcommunity/p/to-be-an-active-community-member?r=22y5cz&utm_campaign=post&utm_medium=web"
+            target="blank"
           >
-            Life of a techie in the trenches
-          </Text>
+            <Text
+              maxW={{ base: "", lg: "427px" }}
+              w={"100%"}
+              lineHeight={{ base: "19.2px", md: "44px" }}
+              cursor={{ base: "", md: "pointer" }}
+            >
+              To be an active community member
+            </Text>
+          </Link>
         </GridItem>
         <GridItem
           w={"100%"}
@@ -143,18 +168,24 @@ const Stories = () => {
           fontFamily={"clash"}
           fontWeight={600}
           h={{ base: "230px", lg: "293px" }}
-          px={{ base: "24px", lg: "56px" }}
+          px={{ base: "24px", lg: "50px" }}
           pb={{ base: "32px", lg: "56px" }}
           alignItems={"flex-end"}
           display={"flex"}
         >
-          <Text
-            w={"100%"}
-            lineHeight={{ base: "19.2px", md: "44px" }}
-            fontSize={{ base: "24px", md: "40px" }}
+          <Link
+            href="https://open.substack.com/pub/roadtripcommunity/p/faith-in-yourself?r=22y5cz&utm_campaign=post&utm_medium=web"
+            target="blank"
           >
-            Moms in tech
-          </Text>
+            <Text
+              w={"100%"}
+              lineHeight={{ base: "19.2px", md: "44px" }}
+              fontSize={{ base: "24px", md: "40px" }}
+              cursor={{ base: "", md: "pointer" }}
+            >
+              Faith... in yourself
+            </Text>
+          </Link>
         </GridItem>
       </Grid>
     </Flex>

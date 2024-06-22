@@ -1,6 +1,6 @@
 import HeaderSEO from "../../components/Header";
 import { content } from "../../content";
-import { Routes } from "../../routes/baseRoutes";
+// import { Routes } from "../../routes/baseRoutes";
 import Articles from "./Articles";
 import Bus from "./Bus";
 import Footprints from "./Footprints";
