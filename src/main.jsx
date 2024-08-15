@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <Fonts />
-      <Flex maxW={"1440px"} margin={"auto"} flexDir={"column"} w={"100%"}>
+      <Flex margin={"auto"} flexDir={"column"} w={"100%"}>
         <RouterProvider router={router} />
         {/* <ScrollRestoration/> */}
       </Flex>

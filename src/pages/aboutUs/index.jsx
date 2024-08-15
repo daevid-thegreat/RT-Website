@@ -9,6 +9,7 @@ import Mentors from "./Mentors";
 import HeaderSEO from "../../components/Header";
 import { content } from "../../content";
 import Volunteers from "./Volunteers";
+import { Box } from "@chakra-ui/react";
 // import Sponsors from './sponsors';
 // import Partners from './partners';
 // import Parspons from './Parspons'
@@ -22,15 +23,16 @@ const AboutUs = () => {
         description={content.description_about}
         image={content.OG_Image_about}
       />
-
-      <Hero />
-      <History />
-      <Mission />
-      <FirstSDG />
-      <SecondSDG />
-      <Team />
-      <Mentors />
-      <Volunteers />
+      <Box maxW={"1440px"} mx="auto">
+        <Hero />
+        <History />
+        <Mission />
+        <FirstSDG />
+        <SecondSDG />
+        <Team />
+        <Mentors />
+        <Volunteers />
+      </Box>
     </>
   );
 };

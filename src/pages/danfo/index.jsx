@@ -20,7 +20,7 @@ const Danfo = () => {
         image={content.OG_Image_inside}
       />
 
-      <Flex bg={"white"} flexDir={"column"}>
+      <Flex bg={"white"} flexDir={"column"} maxW={"1440px"} mx="auto">
         <Hero />
         <Stories />
         <Portfolios />

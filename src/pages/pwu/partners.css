@@ -1,0 +1,22 @@
+.rotate-container {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+}
+
+.rotate-content {
+  display: flex;
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(calc(-50% + 50vw));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
