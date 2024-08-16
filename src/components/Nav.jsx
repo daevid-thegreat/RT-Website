@@ -9,141 +9,138 @@ const Nav = ({ bg }) => {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   return (
-    <Flex alignItems={'center'} justifyContent={"center"} pos={"fixed"} w="100%" zIndex={10000}>
+    // <Flex alignItems={'center'} justifyContent={"center"} pos={"fixed"} w="100%" zIndex={10000}>
+    <Flex
+      flexDir={"column"}
+      justifyContent={"center"}
+      zIndex={"100"}
+      bg={bg}
+      bgImage={"images/rough-bg.png"}
+      pos={"fixed"}
+      w="100%"
+      maxW={"1440px"}
+      margin={"auto"}
+      borderLeft={{
+        base: "",
+        md: "1px solid #111413",
+      }}
+      mx="auto"
+    >
       <Flex
-        flexDir={"column"}
-        justifyContent={"center"}
-        w={"100%"}
-        
-        zIndex={"100"}
-        bg={bg}
-        bgImage={"images/rough-bg.png"}
-        maxW={"1440px"}
-        margin={"auto"}
-        borderLeft={{
-          base: "",
-          md: "1px solid #111413",
+        h={"64px"}
+        justifyContent={"space-between"}
+        borderBottom={{
+          base: "3px solid",
+          md: "4px solid",
         }}
-        mx="auto"
+        borderColor={"black100"}
+        // py={"12.52px"}
       >
-        <Flex
-          h={"64px"}
-          justifyContent={"space-between"}
-          borderBottom={{
+        <Box
+          pl={{ base: "19px", md: "24px" }}
+          pr={{ base: "16px", md: "48px" }}
+          borderRight={{
             base: "3px solid",
             md: "4px solid",
           }}
+          alignItems={"center"}
           borderColor={"black100"}
-          // py={"12.52px"}
+          display={{ base: showNav ? "none" : "flex", lg: "flex" }}
         >
-          <Box
-            pl={{ base: "19px", md: "24px" }}
-            pr={{ base: "16px", md: "48px" }}
-            borderRight={{
-              base: "3px solid",
-              md: "4px solid",
-            }}
-            alignItems={"center"}
-            borderColor={"black100"}
-            display={{ base: showNav ? "none" : "flex", lg: "flex" }}
+          <Image
+            src="images/rt-logo.png"
+            my={"12.52px"}
+            onClick={() => navigate(Routes.index)}
+            cursor={"pointer"}
+          />
+        </Box>
+        <Box
+          display={{ base: showNav ? "flex" : "none", lg: "none" }}
+          pl={{ base: "19px", md: "24px" }}
+          alignItems={"center"}
+        >
+          <Text fontSize={"1rem"} fontFamily={"clash"} fontWeight={600}>
+            Menu
+          </Text>
+        </Box>
+        <Flex
+          fontFamily={"manrope"}
+          fontSize={"1rem"}
+          fontWeight={500}
+          color={"black100"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          borderLeft={"4px solid"}
+          borderColor={"black100"}
+          pl={"24px"}
+          display={{ base: "none", lg: "flex" }}
+        >
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.index)}
           >
-            <Image
-              src="images/rt-logo.png"
-              my={"12.52px"}
-              onClick={() => navigate(Routes.index)}
+            Home
+          </Text>
+
+          <Image src={"/images/ellipse.png"} pr={"24px"} />
+
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.about)}
+          >
+            About Us
+          </Text>
+          <Image src={"/images/ellipse.png"} pr={"24px"} />
+
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.danfo)}
+          >
+            Inside Danfo Bus
+          </Text>
+          <Image src={"/images/ellipse.png"} pr={"24px"} />
+
+          <Text
+            pr={"24px"}
+            cursor={"pointer"}
+            onClick={() => navigate(Routes.partner)}
+          >
+            Partner With Us
+          </Text>
+
+          <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank">
+            <Button
+              text={"DONATE"}
               cursor={"pointer"}
+              // onClick={() => navigate(Routes.donate)}
             />
-          </Box>
-          <Box
-            display={{ base: showNav ? "flex" : "none", lg: "none" }}
-            pl={{ base: "19px", md: "24px" }}
-            alignItems={"center"}
-          >
-            <Text fontSize={"1rem"} fontFamily={"clash"} fontWeight={600}>
-              Menu
-            </Text>
-          </Box>
-          <Flex
-            fontFamily={"manrope"}
-            fontSize={"1rem"}
-            fontWeight={500}
-            color={"black100"}
-            justifyContent={"space-between"}
-            alignItems={"center"}
-            borderLeft={"4px solid"}
-            borderColor={"black100"}
-            pl={"24px"}
-            display={{ base: "none", lg: "flex" }}
-          >
-            <Text
-              pr={"24px"}
-              cursor={"pointer"}
-              onClick={() => navigate(Routes.index)}
-            >
-              Home
-            </Text>
+          </a>
+        </Flex>
 
-            <Image src={"/images/ellipse.png"} pr={"24px"} />
-
-            <Text
-              pr={"24px"}
-              cursor={"pointer"}
-              onClick={() => navigate(Routes.about)}
-            >
-              About Us
-            </Text>
-            <Image src={"/images/ellipse.png"} pr={"24px"} />
-
-            <Text
-              pr={"24px"}
-              cursor={"pointer"}
-              onClick={() => navigate(Routes.danfo)}
-            >
-              Inside Danfo Bus
-            </Text>
-            <Image src={"/images/ellipse.png"} pr={"24px"} />
-
-            <Text
-              pr={"24px"}
-              cursor={"pointer"}
-              onClick={() => navigate(Routes.partner)}
-            >
-              Partner With Us
-            </Text>
-
-            <a
-              href="https://flutterwave.com/donate/4l0tmtvm76fk"
-              target="_blank"
-            >
-              <Button
-                text={"DONATE"}
-                cursor={"pointer"}
-                // onClick={() => navigate(Routes.donate)}
-              />
-            </a>
-          </Flex>
-
-          <Flex
-            borderLeft={"3px solid"}
-            borderColor={"black10"}
-            px={"24px"}
-            alignItems={"center"}
-            display={{ base: "flex", lg: "none" }}
-          >
-            {showNav ? (
-              <CloseIcon
-                h={"1rem"}
-                w={"1rem"}
-                onClick={() => setShowNav(false)}
-              />
-            ) : (
-              <HamburgerIcon
-                h={"2rem"}
-                w={"2rem"}
-                onClick={() => setShowNav(true)}
-              />
-            )}
-          </Flex>
+        <Flex
+          borderLeft={"3px solid"}
+          borderColor={"black10"}
+          px={"24px"}
+          alignItems={"center"}
+          display={{ base: "flex", lg: "none" }}
+        >
+          {showNav ? (
+            <CloseIcon
+              h={"1rem"}
+              w={"1rem"}
+              onClick={() => setShowNav(false)}
+            />
+          ) : (
+            <HamburgerIcon
+              h={"2rem"}
+              w={"2rem"}
+              onClick={() => setShowNav(true)}
+            />
+          )}
+          {/* </Flex> */}
         </Flex>
         {showNav && (
           <Flex

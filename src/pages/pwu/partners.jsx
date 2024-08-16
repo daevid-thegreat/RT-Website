@@ -24,8 +24,7 @@ const partners = () => {
       flexDir={"column"}
       w={"100%"}
       overflowX={"hidden"}
-      border="2px solid #111413"
-      borderBottom={"none"}
+      borderTop="2px solid #111413"
       pt="4rem"
     >
       <Box maxW={"1200px"} w="100%" mx="auto">
