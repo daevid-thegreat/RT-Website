@@ -1,11 +1,12 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+
 import Button from "./Button";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
 import { Routes } from "../routes/baseRoutes";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const Nav = ({bg}) => {
+const Nav = ({ bg }) => {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   return (
@@ -17,7 +18,7 @@ const Nav = ({bg}) => {
       zIndex={"100"}
       bg={bg}
       bgImage={"images/rough-bg.png"}
-      maxW={"1440px"}
+      maxW={"1640px"}
       margin={"auto"}
       borderLeft={{
         base: "",
@@ -32,7 +33,7 @@ const Nav = ({bg}) => {
           md: "4px solid",
         }}
         borderColor={"black100"}
-        // py={"12.52px"}
+      // py={"12.52px"}
       >
         <Box
           pl={{ base: "19px", md: "24px" }}
@@ -112,15 +113,15 @@ const Nav = ({bg}) => {
           >
             Partner With Us
           </Text>
-          
+
           <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank">
             <Button
               text={"DONATE"}
               cursor={"pointer"}
-              // onClick={() => navigate(Routes.donate)}
+            // onClick={() => navigate(Routes.donate)}
             />
           </a>
-            
+
         </Flex>
 
         <Flex
@@ -234,7 +235,7 @@ const Nav = ({bg}) => {
           <Flex onClick={() => navigate(Routes.danfo)}>
             <a href="https://flutterwave.com/donate/4l0tmtvm76fk" target="_blank"
               style={{ width: "100%", maxWidth: "100rem" }}>
-              <Button text={"DONATE"} w={"100%"} maxW={"100rem"}/>
+              <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
             </a>
           </Flex>
         </Flex>

@@ -1,6 +1,6 @@
 const Belief = () => {
   return (
-    <section className="bg-[#E7A6D5] lg:border-t-4 lg:border-b-4 border-t border-b border-[#231F20]">
+    <section className="bg-[#F2A9FE] lg:border-t-4 lg:border-b-4 border-t border-b border-[#231F20]">
       <div className=" bodyCon">
         <div className="lg:py-[74px] lg:px-[120px] py-10 px-8">
           <p className="text-2xl hidden lg:block lg:text-[56px] lg:leading-[84px] uppercase cD400 text-center">

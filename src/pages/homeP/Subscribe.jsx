@@ -6,16 +6,14 @@ const Subscribe = () => {
           <h2 className="cD700 text-[32px] leading-[38px] lg:leading-[76px] text-center lg:text-[64px]">
             Subscribe to our newsletter
           </h2>
-          <p className="max-w-[690px] text-center visby-sem lg:manD text-xs lg:text-base leading-normal">
-            Join RoadTrip, a community of adventure seekers and tech
-            enthusiasts, and let us embark on unforgettable journeys
-            together
+          <p className="max-w-[850px] text-center manD text-[20px] leading-normal">
+            Stay informed, inspired, and be part of the RoadTrip journey. Subscribe to join our dynamic community{`'`}s narrative of growth and achievement!
           </p>
         </div>
 
         <div className="flex px-9 gap-4 lg:gap-5 flex-col w-full max-w-[662px]">
           <input
-            className="border-[2px] lg:border-[4px] border-[#231f20] py-[14px] px-3 lg:py-5 lg:px-8 bg-inherit"
+            className="border-[2px] lg:border-[4px] border-[#ffff] py-[14px] px-3 lg:py-5 lg:px-8 bg-inherit text-white placeholder:text-white"
             type="email"
             placeholder="Your email address"
           />

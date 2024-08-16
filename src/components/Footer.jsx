@@ -1,10 +1,10 @@
-import { Link, Flex, Text, Image, Icon } from "@chakra-ui/react";
 import {
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { Flex, Icon, Image, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
@@ -17,6 +17,7 @@ const Footer = () => {
       fontWeight={400}
       flexDir={{ base: "column", lg: "row" }}
       justifyContent={{ base: "", lg: "space-between" }}
+      className="px-14 "
     >
       <Flex flexDir={"column"}>
         <Image
@@ -68,6 +69,7 @@ const Footer = () => {
           fontSize={"24px"}
           fontWeight={{ base: 600, lg: 400 }}
           pb={{ base: "24px", lg: "32px" }}
+          className="cD600"
         >
           About Us
         </Text>
@@ -105,6 +107,7 @@ const Footer = () => {
           fontSize={"24px"}
           fontWeight={{ base: 600, lg: 400 }}
           pb={{ base: "24px", lg: "32px" }}
+          className="cD600"
         >
           Inside Danfo Bus
         </Text>
@@ -156,6 +159,7 @@ const Footer = () => {
           fontSize={"24px"}
           fontWeight={{ base: 600, lg: 400 }}
           pb={{ base: "24px", lg: "32px" }}
+          className="cD600"
         >
           Partner With Us
         </Text>

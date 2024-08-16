@@ -1,14 +1,14 @@
-import DesignBanner from "./DesignBanner";
-import Hero from "./Hero";
 import Belief from "./Belief";
-import Mission from "./Mission";
-import Gallery from "./Gallery";
-import Companies from "./Companies";
-import Subscribe from "./Subscribe";
 import Can from "./Can";
-import { HeadProvider, Title, Link, Meta } from "react-head";
-import { content } from "../../content";
+import Companies from "./Companies";
+import DesignBanner from "./DesignBanner";
+import Gallery from "./Gallery";
 import HeaderSEO from "../../components/Header";
+import Hero from "./Hero";
+import Mission from "./Mission";
+import Partner from "./Partner";
+import Subscribe from "./Subscribe";
+import { content } from "../../content";
 
 // const AboutUs = () => {
 const HomeP = () => {
@@ -27,6 +27,7 @@ const HomeP = () => {
       <Mission />
       <Companies />
       <Can />
+      <Partner />
       <Gallery />
       <Subscribe />
     </>

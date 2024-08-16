@@ -4,18 +4,8 @@ const Mission = () => {
       <div className="conntianer px-[12px] lg:px-[120px] py-[48px] lg:py-[72px]">
         <div className="blue offshadblack2 bg-[#6868AC] lg:bg-[#4D34CC] border lg:border-[3px] border-[#231F20] p-[10px] lg:p-4 text-white">
           <div className="border lg:border-[3px] border-white px-6 lg:px-20 py-[38px] lg:py-[60px] flex flex-col gap-10">
-            <p className="hidden lg:block text-2xl leading-10 text-center">
-              RoadTrip Community is a diverse group where designers
-              come together to connect, collaborate and grow. We are
-              also welcoming to no-code developers, web developers,
-              software developers, product managers, writers.
-            </p>
-            <p className="block lg:hidden leading-normal p-01 text-center">
-              RoadTrip Community is home to Product Designers, UI/UX
-              Designers, Brand Designers, No-code Developers, Web
-              Developers, Software Developers, Product Managers,
-              Illustrators, Motion Design enthusiasts, UX Writers and
-              lots of Entrepreneurs.
+            <p className="text-[26px] leading-10 text-center">
+              RoadTrip Community is a diverse group where designers come together to connect, collaborate and grow. We are also welcoming to no-code developers, web developers, software developers, product managers, writers.
             </p>
             <div className="slotc">
               <div className="lg:bg-[#198046] bg-[#47996B] slot p-1 order-3 lg:order-none lg:p-[7px] text-center cD600 lg:text-[22px] text-xs tracking-[-0.48px] lg:tracking-[-0.88px]">
@@ -52,11 +42,8 @@ const Mission = () => {
                   Who We Are
                 </h2>
               </div>
-              <p className="manr text-xs lg:text-base">
-                We are a community of creatives from Nigeria and
-                Africa, collectively supporting one another in
-                building a successful career in the Design & Tech
-                space.
+              <p className="manr text-[16px] lg:text-base">
+                We are a vibrant and inclusive space for tech and design creatives! We{`'`}re not just a community; we{`'`}re a tight-knit tribe on a journey of collaboration, growth, and success together.
               </p>
             </div>
           </div>
@@ -70,10 +57,8 @@ const Mission = () => {
                   Our Mission
                 </h2>
               </div>
-              <p className="text-white manr text-xs lg:text-base">
-                We are on a mission to build an exclusive community of
-                members with clear-cut goals and a support system that
-                helps them achieve their goals.
+              <p className="text-white manr text-[16px] lg:text-base">
+                Fueling the drive for success in the design and tech space by providing a supportive environment, valuable resources, and unique opportunities for personal and professional development.
               </p>
             </div>
           </div>
