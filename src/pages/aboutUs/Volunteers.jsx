@@ -1,22 +1,13 @@
 import {
   Flex,
   Text,
-  Link,
   Heading,
-  SimpleGrid,
   Box,
-  Grid,
-  GridItem,
-  Icon,
   Image,
 } from "@chakra-ui/react";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import Button from "../../components/Button";
-import { auVol, roles } from "./Ment";
-import { useState } from "react";
+import { auVol } from "./Ment";
 
 const Volunteers = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <Box py="100px">
       <Heading
