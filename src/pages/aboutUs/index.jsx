@@ -29,7 +29,7 @@ const AboutUs = () => {
       <FirstSDG />
       <SecondSDG />
       <Team />
-      <Mentors />
+      {/* <Mentors /> */}
       <Volunteers />
     </>
   );
