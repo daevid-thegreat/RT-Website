@@ -121,6 +121,7 @@ const Sponsors = () => {
           w="100%"
           px={["20px"]}
           flexDir={["column", "column", "row"]}
+          justifyContent={"center"}
         >
           <Button
             bg="#CC4D34"
