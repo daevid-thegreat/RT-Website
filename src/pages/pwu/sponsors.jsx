@@ -7,17 +7,25 @@ const Sponsors = () => {
       pb={{ base: "42px", lg: "40px" }}
       // px={{ base: "20px", lg: "107px" }}
       flexDir={"column"}
-      w={["100%", "100%", "100%", "1200px"]}
+      w={["100%", "100%", "100%", "100%", "1200px"]}
       overflowX={"hidden"}
       pt="4rem"
       mx="auto"
     >
       <Flex
-        alignItems={"center"}
+        alignItems={[
+          "flex-start",
+          "flex-start",
+          "flex-start",
+          "flex-start",
+          "center",
+        ]}
         justifyContent={"space-between"}
         bg="#EEF0FF"
         minH="352px"
-        px="40px"
+        px={["20px", "40px"]}
+        flexDir={["column", "column", "column", "column", "row"]}
+        py="40px"
       >
         <Box>
           <Heading
@@ -28,7 +36,7 @@ const Sponsors = () => {
             PARTNERSHIP
           </Heading>
           <Text
-            w={["100%", "525px"]}
+            w={["100%", "100%", "525px"]}
             letterSpacing={"-2%"}
             fontFamily={"manrope"}
             lineHeight={"24px"}
@@ -40,16 +48,27 @@ const Sponsors = () => {
           </Text>
         </Box>
 
-        <Image src="/images/msv.png" alt="partnership avatar" />
+        <Image
+          src="/images/msv.png"
+          mt={["1rem", "1rem", "1rem", "1rem", 0]}
+          alt="partnership avatar"
+        />
       </Flex>
 
       <Flex
-        alignItems={"center"}
+        alignItems={[
+          "flex-start",
+          "flex-start",
+          "flex-start",
+          "flex-start",
+          "center",
+        ]}
         justifyContent={"space-between"}
-        bg="#F0FDF5"
+        bg="#EEF0FF"
         minH="352px"
-        px="40px"
-        mt="20px"
+        px={["20px", "40px"]}
+        flexDir={["column", "column", "column", "column", "row"]}
+        py="40px"
       >
         <Box>
           <Heading
@@ -60,7 +79,7 @@ const Sponsors = () => {
             SPONSORSHIP
           </Heading>
           <Text
-            w={["100%", "525px"]}
+            w={["100%", "100%", "525px"]}
             letterSpacing={"-2%"}
             fontFamily={"manrope"}
             lineHeight={"24px"}
@@ -72,7 +91,11 @@ const Sponsors = () => {
           </Text>
         </Box>
 
-        <Image src="/images/exo.png" alt="partnership avatar" />
+        <Image
+          src="/images/exo.png"
+          mt={["1rem", "1rem", "1rem", "1rem", 0]}
+          alt="partnership avatar"
+        />
       </Flex>
 
       <Box
@@ -83,20 +106,26 @@ const Sponsors = () => {
         flexDir={"column"}
       >
         <Text
-          fontSize={"40px"}
+          fontSize={["20px", "20px", "40px"]}
           fontFamily={"clash"}
           fontWeight={500}
           lineHeight={"49.2px"}
-          mb="2rem"
+          mb={["1rem", "2rem"]}
+          textAlign={"center"}
         >
           Donate, sponsor or partner as...
         </Text>
 
-        <Flex gap="24px">
+        <Flex
+          gap="24px"
+          w="100%"
+          px={["20px"]}
+          flexDir={["column", "column", "row"]}
+        >
           <Button
             bg="#CC4D34"
             _hover={{ background: "#CC4D34" }}
-            w="184px"
+            w={["100%", "184px"]}
             h="64px"
             fontWeight={600}
             lineHeight={"24px"}
@@ -110,7 +139,7 @@ const Sponsors = () => {
           <Button
             bg="#198046"
             _hover={{ background: "#198046" }}
-            minW="184px"
+            minW={["100%", "184px"]}
             h="64px"
             fontWeight={600}
             lineHeight={"24px"}

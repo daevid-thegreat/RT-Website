@@ -47,8 +47,7 @@ const partners = () => {
             const { image, text, text2, link, linkText } = data;
             return (
               <Card
-                flex={"1"}
-                minW={"589px"}
+                minW={["343px", "343px", "589px"]}
                 minH={"501px"}
                 borderWidth={4}
                 borderColor="black"
@@ -64,7 +63,12 @@ const partners = () => {
                   <Image src={image} w={130} />
                 </CardHeader>
                 {/* <Divider borderWidth={4} borderColor="black" /> */}
-                <CardBody position={"relative"} minH="319px" paddingBottom={['50px']}>
+                <CardBody
+                  position={"relative"}
+                  minH="319px"
+                  p="20px"
+                  paddingBottom={["50px"]}
+                >
                   <Text
                     fontSize={{ base: "16px", lg: "20px" }}
                     fontWeight={500}
@@ -79,7 +83,15 @@ const partners = () => {
                 </CardBody>
                 {/* <Divider borderWidth={1} borderColor="black" /> */}
                 <CardFooter borderTop={"4px solid black"}>
-                  <Link href={link} color={"black"} fontWeight={600} textDecor={'underline'} fontSize={"20px"} fontFamily={'manrope'}  isExternal>
+                  <Link
+                    href={link}
+                    color={"black"}
+                    fontWeight={600}
+                    textDecor={"underline"}
+                    fontSize={"20px"}
+                    fontFamily={"manrope"}
+                    isExternal
+                  >
                     {linkText}
                   </Link>
                 </CardFooter>

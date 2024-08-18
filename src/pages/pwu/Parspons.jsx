@@ -26,22 +26,23 @@ const Sponsors = () => {
         as={"h2"}
         fontFamily={"clash"}
         fontWeight={600}
-        fontSize={"64px"}
-        lineHeight={"78.72px"}
+        fontSize={["32px", "32px", "64px"]}
+        lineHeight={["32px", "32px", "78.72px"]}
         color={"white"}
         textAlign={"center"}
       >
         Subscribe to our newsletter
       </Heading>
       <Text
-        fontSize={"20px"}
-        w={["100%", "100%", "887px"]}
+        fontSize={["12px", "20px"]}
+        w={["290px", "887px"]}
         mx="auto"
         textAlign={"center"}
         letterSpacing={"-2%"}
         color={"white"}
-        lineHeight={"27.32px"}
+        lineHeight={["14.7px", "14.7px", "27.32px"]}
         mb={"2rem"}
+        mt={['1rem', 0]}
       >
         Stay informed, inspired, and be part of the RoadTrip journey. Subscribe
         to join our dynamic {`community's`} narrative of growth and achievement!
@@ -55,14 +56,16 @@ const Sponsors = () => {
         p="20px 32px"
         border={"4px solid white"}
         color={"white"}
-        fontWeight={400}
+        fontWeight={'400px'}
         _placeholder={{ color: "white" }}
         _focus={{ border: "4px solid white" }}
+        fontFamily={'clash'}
+        fontSize={['12px', '16px']}
       />
 
       <Box
-        w={["100%", "193px"]}
-        h="64px"
+        w={["174px", "193px"]}
+        h={["42px", "64px"]}
         mt="2rem"
         mx="auto"
         position={"relative"}
@@ -78,6 +81,7 @@ const Sponsors = () => {
           textTransform={"capitalize"}
           zIndex={10}
           _hover={{ background: "#111413" }}
+          fontSize={['12px', '16px']}
         >
           SUBSCRIBE
         </Button>

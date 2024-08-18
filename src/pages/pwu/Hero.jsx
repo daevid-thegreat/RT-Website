@@ -24,14 +24,14 @@ const Hero = () => {
           }}
           className="offshadblack"
         />
-        <Flex justifyContent={"space-between"} my="50px">
+        <Flex justifyContent={"space-between"} flexDir={["column", 'column', 'column', 'column', 'row']} my="50px">
           <Box w={["100%", "100%", "698px"]}>
             <Text
               fontFamily={"clash"}
               fontWeight={700}
               color={"black100"}
               fontSize={{ base: "40px", lg: "60px" }}
-              lineHeight={"73.8px"}
+              lineHeight={['35.2px', '35.2px', '35.2px', '73.8px', "73.8px"]}
               textTransform={"uppercase"}
             >
               Invest in Talent Empowerment
@@ -45,7 +45,7 @@ const Hero = () => {
               fontWeight={600}
               _hover={{ background: "#198046" }}
               borderRadius={"none"}
-              mt="2rem"
+              mt={['1rem', '1rem', '1rem', '1rem', "2rem"]}
               fontFamily={"clash"}
               textTransform={"uppercase"}
             >
@@ -56,6 +56,7 @@ const Hero = () => {
             w={["100%", "100%", "462px"]}
             textAlign={"justify"}
             fontFamily={"manrope"}
+            mt={['1rem', '1rem', '1rem', '1rem', 0]}
           >
             Your donations, partnerships and sponsorships fuel our mission to
             provide resources, mentorship, and opportunities to tech talents
