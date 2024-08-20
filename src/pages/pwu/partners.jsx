@@ -1,5 +1,19 @@
-import { SimpleGrid, Card, CardHeader, CardBody, CardFooter, Flex, Divider, Text, Image, Heading, Link,} from "@chakra-ui/react";
+import {
+  SimpleGrid,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Flex,
+  Divider,
+  Text,
+  Image,
+  Heading,
+  Link,
+  Box,
+} from "@chakra-ui/react";
 import { pwuData } from "./data";
+import "./partners.css";
 
 const partners = () => {
   return (
@@ -10,63 +24,82 @@ const partners = () => {
       flexDir={"column"}
       w={"100%"}
       overflowX={"hidden"}
+      borderTop="2px solid #111413"
+      pt="4rem"
     >
-      <Text
-        fontFamily={"clash"}
-        fontWeight={700}
-        color={"black100"}
-        fontSize={{ base: "32px", lg: "60px" }}
-        px={{ base: "10px", lg: "10px" }}
-      >
-        Meet our Wonderful <br />
-        Partners
-      </Text>
+      <Box maxW={"1200px"} w="100%" mx="auto">
+        <Heading
+          as={"h2"}
+          fontFamily={"clash"}
+          fontWeight={700}
+          color={"black100"}
+          fontSize={{ base: "32px", lg: "60px" }}
+          px={{ base: "10px", lg: "10px" }}
+          mb="4rem"
+        >
+          Our Partners
+        </Heading>
+      </Box>
 
-      <SimpleGrid
-        spacing={10}
-        columns={{ base: 1, md: 2, lg: 3 }}
-        px={{ base: "20px", lg: "107px" }}
-        py={{ base: "89px", lg: "106px" }}
-      >
-        {pwuData.map((data, index) => {
-          const { image, text, text2, link, linkText } = data;
-          return (
-            <Card maxW="lg" borderWidth={1} borderColor="black" key={index}>
-              <CardHeader
-                alignItems={"center"}
-                h={117}
-                display={"flex"}
+      <Flex className="rotate-container" w="100%" mx={"auto"}>
+        <Box className="rotate-content" gap="40px">
+          {pwuData.map((data, index) => {
+            const { image, text, text2, link, linkText } = data;
+            return (
+              <Card
+                minW={["343px", "343px", "589px"]}
+                minH={"501px"}
+                borderWidth={4}
+                borderColor="black"
+                key={index}
+                borderRadius={"none"}
               >
-                <Image src={image} w={130} />
-              </CardHeader>
-              <Divider borderWidth={1} borderColor="black" />
-              <CardBody>
-                <Text
-                  paddingTop={{ base: "60px", lg: "200px" }}
-                  fontSize={{ base: "16px", lg: "20px" }}
-                  fontWeight={500}
+                <CardHeader
+                  alignItems={"center"}
+                  h={117}
+                  display={"flex"}
+                  borderBottom={"4px solid black"}
                 >
-                  {text}
-                  <br />
-                  <br />
-                  {text2}
-                </Text>
-              </CardBody>
-              <Divider borderWidth={1} borderColor="black" />
-              <CardFooter>
-                <Link
-                  href={link}
-                  color={"blue"}
-                  fontSize={"20px"}
-                  isExternal
+                  <Image src={image} w={130} />
+                </CardHeader>
+                {/* <Divider borderWidth={4} borderColor="black" /> */}
+                <CardBody
+                  position={"relative"}
+                  minH="319px"
+                  p="20px"
+                  paddingBottom={["50px"]}
                 >
-                  {linkText}
-                </Link>
-              </CardFooter>
-            </Card>
-          );
-        })}
-      </SimpleGrid>
+                  <Text
+                    fontSize={{ base: "16px", lg: "20px" }}
+                    fontWeight={500}
+                    position={"absolute"}
+                    bottom={"0"}
+                  >
+                    {text}
+                    <br />
+                    <br />
+                    {text2}
+                  </Text>
+                </CardBody>
+                {/* <Divider borderWidth={1} borderColor="black" /> */}
+                <CardFooter borderTop={"4px solid black"}>
+                  <Link
+                    href={link}
+                    color={"black"}
+                    fontWeight={600}
+                    textDecor={"underline"}
+                    fontSize={"20px"}
+                    fontFamily={"manrope"}
+                    isExternal
+                  >
+                    {linkText}
+                  </Link>
+                </CardFooter>
+              </Card>
+            );
+          })}
+        </Box>
+      </Flex>
     </Flex>
   );
 };

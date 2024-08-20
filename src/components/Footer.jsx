@@ -66,7 +66,7 @@ const Footer = () => {
       <Flex flexDir={"column"} pb={{ base: "40px", lg: "" }}>
         <Text
           fontSize={"24px"}
-          fontWeight={{ base: 600, lg: 400 }}
+          fontWeight={600}
           pb={{ base: "24px", lg: "32px" }}
         >
           About Us
@@ -103,7 +103,7 @@ const Footer = () => {
       <Flex flexDir={"column"} pb={{ base: "40px", lg: "" }}>
         <Text
           fontSize={"24px"}
-          fontWeight={{ base: 600, lg: 400 }}
+          fontWeight={600}
           pb={{ base: "24px", lg: "32px" }}
         >
           Inside Danfo Bus
@@ -154,7 +154,7 @@ const Footer = () => {
       <Flex flexDir={"column"} pb={{ base: "40px", lg: "" }}>
         <Text
           fontSize={"24px"}
-          fontWeight={{ base: 600, lg: 400 }}
+          fontWeight={600}
           pb={{ base: "24px", lg: "32px" }}
         >
           Partner With Us

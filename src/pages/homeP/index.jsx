@@ -9,11 +9,12 @@ import Can from "./Can";
 import { HeadProvider, Title, Link, Meta } from "react-head";
 import { content } from "../../content";
 import HeaderSEO from "../../components/Header";
+import { Box } from "@chakra-ui/react";
 
 // const AboutUs = () => {
 const HomeP = () => {
   return (
-    <>
+    <Box maxW={"1440px"} mx="auto">
       <HeaderSEO
         title={content.title}
         url={content.canonical_url}
@@ -29,7 +30,7 @@ const HomeP = () => {
       <Can />
       <Gallery />
       <Subscribe />
-    </>
+    </Box>
   );
 };
 // export default AboutUs
