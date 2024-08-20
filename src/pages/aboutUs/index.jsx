@@ -23,16 +23,14 @@ const AboutUs = () => {
         description={content.description_about}
         image={content.OG_Image_about}
       />
-      <Box maxW={"1440px"} mx="auto">
-        <Hero />
-        <History />
-        <Mission />
-        <FirstSDG />
-        <SecondSDG />
-        <Team />
-        <Mentors />
-        <Volunteers />
-      </Box>
+      <Hero />
+      <History />
+      <Mission />
+      <FirstSDG />
+      <SecondSDG />
+      <Team />
+      {/* <Mentors /> */}
+      <Volunteers />
     </>
   );
 };

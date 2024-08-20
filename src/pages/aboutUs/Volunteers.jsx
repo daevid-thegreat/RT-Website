@@ -1,41 +1,66 @@
 import {
   Flex,
   Text,
-  Link,
   Heading,
-  SimpleGrid,
   Box,
-  Grid,
-  GridItem,
-  Icon,
   Image,
 } from "@chakra-ui/react";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import Button from "../../components/Button";
-import { auVol, roles } from "./Ment";
-import { useState } from "react";
+import { auVol } from "./Ment";
 
 const Volunteers = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
-    <Grid
-      templateColumns={{
-        base: "1fr",
-        lg: "repeat(2, 1fr)",
-      }}
-      gap={"36px"}
-      bg={"white"}
-      templateAreas={{
-        base: `"text"
-               "image"`,
-        lg: `"image text"`,
-      }}
-      fontFamily={"manrope"}
-      pt={{ base: "", lg: "43px" }}
-      pb={{ base: "80px", lg: "43px" }}
-      px={{ base: 3, lg: 20 }}
-    >
-      <GridItem area={"image"}>
+    <Box py="100px">
+      <Heading
+        fontSize={["24px", "24px", "32px"]}
+        fontWeight={600}
+        lineHeight={["29.52px", '29.52px', "39.36px"]}
+        fontFamily={"clash"}
+        color={"#111413"}
+        textAlign={["left", "left", "center"]}
+        px="10px"
+      >
+        Over 40 Facilitators, Mentors and Volunteers{" "}
+      </Heading>
+      <Text
+        fontSize={"16px"}
+        fontWeight={400}
+        fontFamily={"manrope"}
+        color={"#111413"}
+        textAlign={["left", "center"]}
+        px="10px"
+      >
+        Some of our dedicated individuals supporting our community initiatives.
+      </Text>
+
+      <Flex
+        flexWrap="wrap"
+        justifyContent="center"
+        maxW={["100%", '100%', "950px"]}
+        mx="auto"
+        gap={2}
+        mt={'4rem'}
+      >
+        {auVol.map(({ image, heading }, idx) => (
+          <Flex
+            minW="139px"
+            h="64px"
+            alignItems={"center"}
+            justifyContent={"center"}
+            border={"1px solid #111413"}
+            fontSize={"18px"}
+            fontWeight={600}
+            lineHeight={"24.59px"}
+            gap={"8px"}
+            fontFamily={"manrope"}
+            key={idx}
+            px="10px"
+            textTransform={'uppercase'}
+          >
+            <Image src={image} alt={heading} w={"32px"} h="32px" /> {heading}
+          </Flex>
+        ))}
+      </Flex>
+      {/* <GridItem area={"image"}>
         <SimpleGrid
           minChildWidth="99px"
           alignContent={"flex-start"}
@@ -141,8 +166,8 @@ const Volunteers = () => {
             })}
           </Flex>
         </Box>
-      </GridItem>
-    </Grid>
+      </GridItem> */}
+    </Box>
   );
 };
 export default Volunteers;
