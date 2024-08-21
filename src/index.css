@@ -112,6 +112,10 @@ body {
   box-shadow: 4px 4px 0 0 #231f20;
 }
 
+.offshadblack0 {
+  box-shadow: 4px 4px 4px 4px #231f20;
+}
+
 .offshadblack3 {
   box-shadow: 4px 4px 0 0 #231f20;
   padding-left: 0 !important;

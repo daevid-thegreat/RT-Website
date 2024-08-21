@@ -17,13 +17,13 @@ const Companies = () => {
             RoadTrippers are making waves at reputable companies
           </h1>
         </div>
-        <div>
+        <div className="hidden md:block">
           <img src="/images/rtc.svg" />
         </div>
       </section>
       <section>
         <div className="">
-          <div className="grid cp-cont ">
+          <div className="grid cp-cont">
             <div>
               <Image
                 src={"images/companies/cowrywise.svg"}

@@ -16,7 +16,7 @@ const Nav = ({ bg }) => {
       w={"100%"}
       pos={"fixed"}
       zIndex={"100"}
-      bg={bg}
+      bg={showNav ? "white" : bg}
       bgImage={"images/rough-bg.png"}
       maxW={"1640px"}
       margin={"auto"}
@@ -57,6 +57,7 @@ const Nav = ({ bg }) => {
           display={{ base: showNav ? "flex" : "none", lg: "none" }}
           pl={{ base: "19px", md: "24px" }}
           alignItems={"center"}
+          bg={showNav ? "white" : ""}
         >
           <Text
             fontSize={"1rem"}
@@ -130,6 +131,7 @@ const Nav = ({ bg }) => {
           px={"24px"}
           alignItems={"center"}
           display={{ base: "flex", lg: "none" }}
+          bg={showNav ? "white" : ""}
         >
           {showNav ? (
             <CloseIcon
@@ -151,6 +153,7 @@ const Nav = ({ bg }) => {
           justifyContent={"space-between"}
           flexDir={"column"}
           h={"calc(100vh - 64px)"}
+          bg={"white"}
           display={{ base: "flex", lg: "none" }}
         >
           <Flex
@@ -159,6 +162,7 @@ const Nav = ({ bg }) => {
             fontWeight={600}
             fontFamily={"clash"}
             color={"black200"}
+            bg={"white"}
           >
             <Flex
               py={"40px"}

@@ -8,7 +8,7 @@ const Partner = () => {
                 </p>
             </div>
 
-            <div className="flex justify-center items-center gap-10 my-10">
+            <div className="grid md:grid-cols-3 grid-cols-1 justify-center justify-items-center items-center gap-10 my-10 md:px-24 px-4">
                 <img src="/images/wudd.svg" width={"421.73px"} height={"85px"} />
                 <img src="/images/YAPPI.svg" width={"241.16px"} height={"139px"} />
                 <img src="/images/UDC.svg" width={"180.96px"} height={"121px"} />
