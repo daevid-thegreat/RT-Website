@@ -3,10 +3,9 @@ import { Flex, Text, Image } from "@chakra-ui/react";
 const History = () => {
   return (
     <Flex
-      bg={"pink300"}
       flexDir={"column"}
       px={{ base: "16px", lg: "122px" }}
-      py={{ base: "56px", lg: "80px" }}
+      pt={{ base: "56px", lg: "80px" }}
       w={"100%"}
     >
       {/* <Text
@@ -21,17 +20,17 @@ const History = () => {
       <Flex
         flexDir={{ base: "column", lg: "row" }}
         gap={"20px"}
-        alignItems={"center"}
       >
         <Flex
-          bg={"green300"}
-          maxW={"588px"}
+          bg={"#FEF9EC"}
+          maxW={['100%', '100%', '100%', '100%', "588px"]}
           h={{ base: "675px", md: "866px" }}
           w={"100%"}
           color={"black100"}
           px={{ base: "16px", md: "40px" }}
           flexDir={"column"}
           pb={"40px"}
+          alignItems={['flex-start', 'flex-start', 'flex-start', 'flex-start', "center"]}
         >
           <Text
             fontFamily={"clash"}
@@ -48,11 +47,20 @@ const History = () => {
             fontSize={{ base: "12px", lg: "16px" }}
             fontWeight={600}
             pb={{ base: "16px", md: "40px" }}
+            textAlign={"justify"}
             // lineHeight={{ base: "19.2px", md: "28.8px" }}
           >
-            Founded on April 12, 2021, RoadTrip Community has a rich history rooted in the design track at Zuri Training. Initially a design-focused community, it has transformed into a home for creatives with diverse skills and interests, expanding its reach to encompass members from Nigeria, the UK, Canada and the US. On this road trip, the journey has been one of evolution, adaptability, and a commitment to empowering its members.
+            Founded on April 12, 2021, RoadTrip Community started as a
+            design-focused community, and evolved into a{" "}
+            <strong>
+              home for creatives with diverse skills and interests
+            </strong>
+            , expanding its reach to encompass members from Nigeria, the UK,
+            Canada and the US. Our journey is characterized by growth,
+            flexibility, and a steadfast dedication to empowering our community
+            members.
           </Text>
-          
+
           <Image
             src="/images/History.png"
             alt="Green double couch with wooden legs"
@@ -60,17 +68,16 @@ const History = () => {
             borderStyle="solid"
             borderColor="black"
             objectFit="cover"
-            maxW={"508px"}
+            maxW={[ "508px"]}
             w={"100%"}
             h={{ base: "360px", md: "480px" }}
             m={"auto"}
             mt={1}
           />
-
         </Flex>
         <Flex
           bg={"#FAD5CE"}
-          maxW={"588px"}
+          mmaxW={['100%', '100%', '100%', '100%', "588px"]}
           h={{ base: "675px", md: "866px" }}
           w={"100%"}
           color={"black100"}
@@ -93,11 +100,19 @@ const History = () => {
             fontSize={{ base: "12px", md: "16px" }}
             fontWeight={600}
             pb={{ base: "16px", md: "40px" }}
-            // lineHeight={{ base: "19.2px", md: "28.8px" }}
+            textAlign={'justify'}
           >
-            Our vision is to cultivate a thriving community where at least 50% of our members earn $10,000 monthly. This vision is more than a financial goal; it encompasses providing members with the necessary tools and support to maximize job opportunities, financial literacy, negotiation skills, and overall earnings. RoadTrip aspires to be a driving force in creating success stories for its members.
+            <strong>
+              Cultivate a thriving community with at least 50% of members
+              earning $10,000 monthly
+            </strong>
+            . It is more than a financial goal; it encompasses providing members
+            with the necessary tools and support to maximize job opportunities
+            and master financial literacy and proper negotiation skills.
+            RoadTrip aspires to be a driving force in creating success stories
+            for its members.
           </Text>
-           <Image
+          <Image
             src="/images/Vision.png"
             alt="Green double couch with wooden legs"
             borderWidth="3px"

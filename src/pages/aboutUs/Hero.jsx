@@ -1,11 +1,4 @@
-import {
-  Flex,
-  Image,
-  Link,
-  Text,
-  Button,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Image, Link, Text, Button, Box } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
@@ -35,55 +28,51 @@ const Hero = () => {
         className="offshadyellow "
       />
       <Flex
-        // pt={{ base: "89px", lg: "106px" }}
-        // pb={{ base: "42px", lg: "40px" }}
-        // pl={{ base: "20px", lg: "50px" }}
-        flexDir={{ base: "column", lg: "row" }}
-        // w={"100%"}
-        overflowX={"hidden"}
-        justifyContent={{ base: "", lg: "space-between" }}
+        justifyContent={"space-between"}
+        flexDir={["column", "column", "column", "column", "row"]}
+        my="50px"
       >
-        <Box>
+        <Box w={["100%", "100%", "698px"]}>
           <Text
             fontFamily={"clash"}
             fontWeight={700}
             color={"black100"}
-            fontSize={{ base: "40px", lg: "80px" }}
-            w="100%"
-            mr={{ base: "20px", lg: "150px" }}
+            fontSize={{ base: "40px", lg: "60px" }}
+            lineHeight={["35.2px", "35.2px", "35.2px", "73.8px", "73.8px"]}
+            textTransform={"uppercase"}
           >
-            ABOUT US
+            About Us
           </Text>
           <Button
-            width={250}
-            background={"green"}
+            minW={"213px"}
+            h="64px"
+            background={"#198046"}
             border={"none"}
             color={"#ffff"}
-            p={"25px"}
-            fontSize={{ base: "md", lg: "lg" }}
+            fontWeight={600}
+            _hover={{ background: "#198046" }}
+            borderRadius={"none"}
+            mt={["1rem", "1rem", "1rem", "1rem", "2rem"]}
+            fontFamily={"clash"}
+            textTransform={"uppercase"}
           >
-            MEET THE ROADTRIPPERS
+            Meet THE ROadTrippers
           </Button>
         </Box>
-        <Box
-          ml={{ base: "20px", lg: "0px" }}
-          mt={{ base: "20px", lg: "20px" }}
-          w="100%"
-          maxW={{ base: "", lg: "463px" }}
-          fontWeight={{ base: 400, lg: 500 }}
-          fontSize={{ base: "12px", lg: "16px" }}
+        <Text
+          w={["100%", "100%", "462px"]}
+          textAlign={"justify"}
           fontFamily={"manrope"}
+          mt={["1rem", "1rem", "1rem", "1rem", 0]}
         >
-          <Text>
-            Established in 2021, RoadTrip Community initially started
-            out as a Design Community. This was greatly influenced by
-            the fact that the ancestors of this group came from the
-            Design Track at Zuri Training in April 2021. <br /> <br />
-            As the community evolved, we made room for folks with
-            multi-disciplinary interests and skills other than Design
-            itself.
-          </Text>
-        </Box>
+          Established in 2021, RoadTrip Community initially started out as a
+          Design Community. This was greatly influenced by the fact that the
+          ancestors of this group came from the Design Track at Zuri Training in
+          April 2021.
+          <br /><br />
+          As the community evolved, we made room for folks with
+          multi-disciplinary interests and skills other than Design itself.
+        </Text>
       </Flex>
     </Flex>
   );

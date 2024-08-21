@@ -9,11 +9,13 @@ import Mission from "./Mission";
 import Partner from "./Partner";
 import Subscribe from "./Subscribe";
 import { content } from "../../content";
+import HeaderSEO from "../../components/Header";
+import { Box } from "@chakra-ui/react";
 
 // const AboutUs = () => {
 const HomeP = () => {
   return (
-    <>
+    <Box maxW={"1440px"} mx="auto">
       <HeaderSEO
         title={content.title}
         url={content.canonical_url}
@@ -30,7 +32,7 @@ const HomeP = () => {
       <Partner />
       <Gallery />
       <Subscribe />
-    </>
+    </Box>
   );
 };
 // export default AboutUs

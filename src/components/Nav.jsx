@@ -10,20 +10,22 @@ const Nav = ({ bg }) => {
   const navigate = useNavigate();
   const [showNav, setShowNav] = useState(false);
   return (
+    // <Flex alignItems={'center'} justifyContent={"center"} pos={"fixed"} w="100%" zIndex={10000}>
     <Flex
       flexDir={"column"}
       justifyContent={"center"}
-      w={"100%"}
-      pos={"fixed"}
       zIndex={"100"}
       bg={showNav ? "white" : bg}
       bgImage={"images/rough-bg.png"}
-      maxW={"1640px"}
+      pos={"fixed"}
+      w="100%"
+      maxW={"1440px"}
       margin={"auto"}
       borderLeft={{
         base: "",
         md: "1px solid #111413",
       }}
+      mx="auto"
     >
       <Flex
         h={"64px"}
@@ -50,7 +52,7 @@ const Nav = ({ bg }) => {
             src="images/rt-logo.png"
             my={"12.52px"}
             onClick={() => navigate(Routes.index)}
-            cursor={'pointer'}
+            cursor={"pointer"}
           />
         </Box>
         <Box
@@ -59,11 +61,7 @@ const Nav = ({ bg }) => {
           alignItems={"center"}
           bg={showNav ? "white" : ""}
         >
-          <Text
-            fontSize={"1rem"}
-            fontFamily={"clash"}
-            fontWeight={600}
-          >
+          <Text fontSize={"1rem"} fontFamily={"clash"} fontWeight={600}>
             Menu
           </Text>
         </Box>
@@ -122,7 +120,6 @@ const Nav = ({ bg }) => {
             // onClick={() => navigate(Routes.donate)}
             />
           </a>
-
         </Flex>
 
         <Flex
@@ -146,6 +143,7 @@ const Nav = ({ bg }) => {
               onClick={() => setShowNav(true)}
             />
           )}
+          {/* </Flex> */}
         </Flex>
       </Flex>
       {showNav && (
@@ -157,6 +155,7 @@ const Nav = ({ bg }) => {
           display={{ base: "flex", lg: "none" }}
         >
           <Flex
+            justifyContent={"space-between"}
             flexDir={"column"}
             fontSize={"2rem"}
             fontWeight={600}
@@ -165,75 +164,92 @@ const Nav = ({ bg }) => {
             bg={"white"}
           >
             <Flex
-              py={"40px"}
-              borderBottom={"3px solid"}
-              borderColor={"black200"}
-              w={"100%"}
-              alignItems={"center"}
-              justifyContent={"center"}
+              flexDir={"column"}
+              fontSize={"2rem"}
+              fontWeight={600}
+              fontFamily={"clash"}
+              color={"black200"}
             >
-              <Text
-                onClick={() => {
-                  navigate(Routes.index);
-                  setShowNav(false);
-                }}
+              <Flex
+                py={"40px"}
+                borderBottom={"3px solid"}
+                borderColor={"black200"}
+                w={"100%"}
+                alignItems={"center"}
+                justifyContent={"center"}
               >
-                Home
-              </Text>
-            </Flex>
+                <Text
+                  onClick={() => {
+                    navigate(Routes.index);
+                    setShowNav(false);
+                  }}
+                >
+                  Home
+                </Text>
+              </Flex>
 
-            <Flex
-              py={"40px"}
-              borderBottom={"3px solid"}
-              borderColor={"black200"}
-              w={"100%"}
-              alignItems={"center"}
-              justifyContent={"center"}
-            >
-              <Text
-                onClick={() => {
-                  navigate(Routes.about);
-                  setShowNav(false);
-                }}
+              <Flex
+                py={"40px"}
+                borderBottom={"3px solid"}
+                borderColor={"black200"}
+                w={"100%"}
+                alignItems={"center"}
+                justifyContent={"center"}
               >
-                About Us
-              </Text>
-            </Flex>
+                <Text
+                  onClick={() => {
+                    navigate(Routes.about);
+                    setShowNav(false);
+                  }}
+                >
+                  About Us
+                </Text>
+              </Flex>
 
-            <Flex
-              py={"40px"}
-              borderBottom={"3px solid"}
-              borderColor={"black200"}
-              w={"100%"}
-              alignItems={"center"}
-              justifyContent={"center"}
-            >
-              <Text
-                onClick={() => {
-                  navigate(Routes.danfo);
-                  setShowNav(false);
-                }}
+              <Flex
+                py={"40px"}
+                borderBottom={"3px solid"}
+                borderColor={"black200"}
+                w={"100%"}
+                alignItems={"center"}
+                justifyContent={"center"}
               >
-                Inside Danfo Bus
-              </Text>
-            </Flex>
+                <Text
+                  onClick={() => {
+                    navigate(Routes.danfo);
+                    setShowNav(false);
+                  }}
+                >
+                  Inside Danfo Bus
+                </Text>
+              </Flex>
 
-            <Flex
-              py={"40px"}
-              borderBottom={"3px solid"}
-              borderColor={"black200"}
-              w={"100%"}
-              alignItems={"center"}
-              justifyContent={"center"}
-            >
-              <Text
-                onClick={() => {
-                  navigate(Routes.partner);
-                  setShowNav(false);
-                }}
+              <Flex
+                py={"40px"}
+                borderBottom={"3px solid"}
+                borderColor={"black200"}
+                w={"100%"}
+                alignItems={"center"}
+                justifyContent={"center"}
               >
-                Partner With Us
-              </Text>
+                <Text
+                  onClick={() => {
+                    navigate(Routes.partner);
+                    setShowNav(false);
+                  }}
+                >
+                  Partner With Us
+                </Text>
+              </Flex>
+            </Flex>
+            <Flex onClick={() => navigate(Routes.danfo)}>
+              <a
+                href="https://flutterwave.com/donate/4l0tmtvm76fk"
+                target="_blank"
+                style={{ width: "100%", maxWidth: "100rem" }}
+              >
+                <Button text={"DONATE"} w={"100%"} maxW={"100rem"} />
+              </a>
             </Flex>
           </Flex>
           <Flex onClick={() => navigate(Routes.danfo)}>
@@ -244,6 +260,7 @@ const Nav = ({ bg }) => {
           </Flex>
         </Flex>
       )}
+
     </Flex>
   );
 };
